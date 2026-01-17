@@ -1,0 +1,3085 @@
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US"><head>
+    <meta charset="utf-8">
+    <title>Adams - Discover high-quality products</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="Adams">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <link rel="canonical" href="https://adamsstore.tweaki.store">
+
+    <!-- SEO Meta Tags for High Visibility -->
+    <meta name="robots" content="index, follow">
+    <meta name="title" content="Adams">
+    <meta name="description" content="Discover high-quality products from Adams. Shop now for the best deals and exclusive offers.">
+
+    <!-- Open Graph Meta Tags for Social Media -->
+    <meta property="og:type" content="product">
+    <meta property="og:title" content="Adams">
+    <meta property="og:description" content="Explore our range of premium products at Adams. Shop now for exclusive deals.">
+    <meta property="og:image" content="images/696896e1d84ff.jpeg">
+    <meta property="og:url" content="https://adamsstore.tweaki.store">
+    <meta property="og:site_name" content="Adams">
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Adams">
+    <meta name="twitter:description" content="Shop premium products at Adams. Discover deals today!">
+    <meta name="twitter:image" content="https://raw.githubusercontent.com/tweaki-india/medias/main/696896e1d84ff.jpeg">
+
+    <!-- font -->
+    <link rel="stylesheet" href="css/fonts.css">
+    <!-- Icons -->
+    <link rel="stylesheet" href="css/font-icons.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+
+    <link rel="shortcut icon" href="images/696896e1d84ff.jpeg">
+    <link rel="apple-touch-icon-precomposed" href="images/696896e1d84ff.jpeg">
+    
+    <script src="js/lottie-player.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script defer="" src="js/cdn.min.js"></script>
+    <style>[wire\:loading], [wire\:loading\.delay], [wire\:loading\.inline-block], [wire\:loading\.inline], [wire\:loading\.block], [wire\:loading\.flex], [wire\:loading\.table], [wire\:loading\.grid], [wire\:loading\.inline-flex] {display: none;}[wire\:loading\.delay\.shortest], [wire\:loading\.delay\.shorter], [wire\:loading\.delay\.short], [wire\:loading\.delay\.long], [wire\:loading\.delay\.longer], [wire\:loading\.delay\.longest] {display:none;}[wire\:offline] {display: none;}[wire\:dirty]:not(textarea):not(input):not(select) {display: none;}input:-webkit-autofill, select:-webkit-autofill, textarea:-webkit-autofill {animation-duration: 50000s;animation-name: livewireautofill;}@keyframes livewireautofill { from {} }</style>
+
+            <style>
+            .info-btn {
+                position: absolute;
+                bottom: 7px;
+                right: 12px;
+                z-index: 4;
+                padding: 6px 14px;
+                font-size: 13px;
+                font-weight: 600;
+                border-radius: 999px;
+                border: none;
+                cursor: pointer;
+                background: rgba(255, 255, 255, 0.92);
+                color: #000;
+                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+                transition: all 0.25s ease;
+            }
+
+            .info-btn:hover {
+                background: #000;
+                color: #fff;
+                transform: translateY(-2px);
+            }
+
+
+            .video-modal {
+                position: fixed;
+                inset: 0;
+                background: rgba(0, 0, 0, 0.9);
+                display: none;
+                align-items: center;
+                justify-content: center;
+                z-index: 9999;
+            }
+
+            .video-modal video {
+                width: 90%;
+                max-width: 420px;
+                max-height: 90vh;
+                border-radius: 12px;
+            }
+
+
+            .media-card::before {
+                content: "";
+                position: absolute;
+                inset: 0;
+                background: rgba(0, 0, 0, 0.25);
+                /* subtle black shade */
+                opacity: 0;
+                transition: opacity 0.3s ease;
+                z-index: 1;
+            }
+
+
+            .media-card:hover::before {
+                opacity: 1;
+            }
+
+            .media-card::after {
+                position: absolute;
+                inset: 0;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 48px;
+                color: #fff;
+                opacity: 0;
+                transition: opacity 0.3s ease;
+                z-index: 2;
+            }
+
+            .media-card:hover::after {
+                opacity: 1;
+            }
+
+
+            .media-card {
+                position: relative;
+                width: 100%;
+                aspect-ratio: 9 / 16;
+                border-radius: 16px;
+                overflow: hidden;
+                cursor: pointer;
+            }
+
+            .media-card {
+                position: relative;
+            }
+
+
+            .media-overlay {
+                position: absolute;
+                inset: 0;
+                background: rgba(0, 0, 0, 0.08);
+                z-index: 2;
+                pointer-events: none;
+            }
+
+
+            /* heading text */
+            .media-card .heading {
+                position: absolute;
+                bottom: 12px;
+                left: 12px;
+                right: 12px;
+
+                z-index: 3;
+                /* 👈 ABOVE overlay */
+                color: #fff;
+                font-size: 14px;
+                font-weight: 600;
+
+                text-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
+                pointer-events: none;
+            }
+
+
+            /* ALWAYS visible subtle shade */
+            .media-overlay {
+                position: absolute;
+                inset: 0;
+                background: rgba(0, 0, 0, 0.08);
+                /* 👈 VERY LOW */
+                z-index: 2;
+                pointer-events: none;
+                opacity: 1;
+                /* 👈 IMPORTANT */
+            }
+
+            /* Optional: slightly darker on hover */
+            .media-card:hover .media-overlay {
+                background: rgba(0, 0, 0, 0.14);
+            }
+
+            /* media */
+            .media-video,
+            .media-img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                position: relative;
+                z-index: 1;
+            }
+
+
+            .media-video,
+            .media-img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                position: relative;
+                z-index: 0;
+            }
+
+            /* Optional play icon */
+            .media-card::after {
+                position: absolute;
+                inset: 0;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 48px;
+                color: rgba(255, 255, 255, 0.8);
+                pointer-events: none;
+            }
+
+
+            .product-grid {
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                /* Desktop: 4 */
+                gap: 30px;
+            }
+
+            /* Tablet & Mobile */
+            @media (max-width: 991px) {
+                .product-grid {
+                    grid-template-columns: repeat(2, 1fr);
+                    /* 2 items */
+                    gap: 15px;
+                }
+            }
+
+            .wrap-slider-new {
+                position: relative;
+                width: 100%;
+                 overflow: hidden;
+            }
+
+            .wrap-slider-new img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                /* key */
+                display: block;
+            }
+
+            /* Content overlay */
+            .wrap-slider-new .box-content {
+                position: absolute;
+                inset: 0;
+                display: flex;
+                align-items: center;
+                /* vertical center */
+                justify-content: flex-start;
+                /* LEFT on web */
+                padding-left: 80px;
+                /* desktop left spacing */
+                padding-right: 20px;
+
+                background: linear-gradient(90deg,
+                        rgba(0, 0, 0, 0.55) 0%,
+                        rgba(0, 0, 0, 0.35) 45%,
+                        rgba(0, 0, 0, 0.1) 70%,
+                        rgba(0, 0, 0, 0) 100%);
+            }
+
+            /* IMPORTANT: override bootstrap container center */
+            .wrap-slider-new .box-content .container {
+                margin-left: 0 !important;
+                /* force left */
+                margin-right: auto;
+                padding-left: 0;
+                max-width: 620px;
+                color: #fff;
+                text-align: left;
+            }
+
+            .fade-item fade-item-2 {
+                margin-bottom: 10px !important;
+            }
+
+            /* ----------- Tablet ----------- */
+            @media (max-width: 991px) {
+                .wrap-slider-new {
+                    
+                }
+
+                .wrap-slider-new h1 {
+                    font-size: 26px;
+                }
+
+                .wrap-slider-new p {
+                    font-size: 15px;
+                }
+
+                .wrap-slider-new .box-content {
+                    padding-left: 40px;
+                }
+            }
+
+            /* ----------- Mobile ----------- */
+            @media (max-width: 576px) {
+                .wrap-slider-new .box-content {
+                    align-items: flex-end;
+                    /* bottom */
+                    padding-left: 20px;
+                    padding-bottom: 20px;
+                }
+
+                /* Mobile can stay centered or left — your choice */
+                .wrap-slider-new .box-content .container {
+                    margin: 0;
+                }
+            }
+
+
+            .tf-slideshow,
+            .swiper,
+            .swiper-wrapper,
+            .swiper-slide {
+                height: 100%;
+            }
+
+            .box-content h1,
+            .box-content p,
+            .box-content a {
+                text-transform: uppercase;
+                color: white;
+                font-weight: bold;
+            }
+
+            .product-card {
+                background: #fff;
+                border: 1px solid #eee;
+                border-radius: 14px;
+                padding: 5px;
+                transition: all 0.3s ease;
+            }
+
+            .product-card:hover {
+                border-color: #e53935;
+                /* brand color */
+                box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+                transform: translateY(-4px);
+            }
+        </style>
+    
+    
+    <style>
+        
+    </style>
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Adams",
+        "url": "https://adamsstore.tweaki.store",
+        "description": "Welcome to Adams, your destination for premium products."
+    }
+    </script>
+
+    <script>
+        (function() {
+            function getAnonId() {
+                let id = localStorage.getItem('tweaki_anon_id');
+                if (!id) {
+                    id = crypto.randomUUID?.() || 'anon-' + Date.now() + Math.random().toString(36).slice(2);
+                    localStorage.setItem('tweaki_anon_id', id);
+                }
+                return id;
+            }
+
+            function fireMetaFromAnalytics(event) {
+                if (!window.fbq) return;
+
+                const {
+                    event_name,
+                    properties
+                } = event;
+
+                switch (event_name) {
+
+                    case 'Page Viewed':
+                        fbq('track', 'PageView');
+                        break;
+
+                    case 'Product Viewed':
+                        fbq('track', 'ViewContent', {
+                            content_ids: [String(properties.product_id)],
+                            content_type: 'product',
+                            value: Number(properties.price),
+                            currency: 'INR'
+                        });
+                        break;
+
+                    case 'Add To Cart':
+                        fbq('track', 'AddToCart', {
+                            content_ids: [String(properties.product_id)],
+                            content_type: 'product',
+                            value: Number(properties.price),
+                            currency: 'INR',
+                            quantity: properties.quantity
+                        });
+                        break;
+
+                    case 'Checkout Started':
+                        fbq('track', 'InitiateCheckout', {
+                            currency: 'INR'
+                        });
+                        break;
+
+                    case 'Customer Identified':
+                        // ❌ Do NOT send raw PII
+                        // Optional: custom event without PII
+                        fbq('trackCustom', 'CustomerIdentified');
+                        break;
+
+                    case 'Order Attempted':
+                        fbq('track', 'AddPaymentInfo', {
+                            value: Number(properties.total),
+                            currency: 'INR'
+                        });
+                        break;
+
+                    default:
+                        fbq('trackCustom', event_name, properties);
+                }
+            }
+
+            async function sendEvent(name, properties = {}) {
+                const payload = {
+                    event_name: name,
+                    properties,
+                    anonymous_id: getAnonId(),
+                    occurred_at: new Date().toISOString(),
+                    source: 'browser'
+                };
+
+                fireMetaFromAnalytics(payload);
+
+                // Best-effort: send beacon or fetch
+                if (navigator.sendBeacon) {
+                    const blob = new Blob([JSON.stringify(payload)], {
+                        type: 'application/json'
+                    });
+                    navigator.sendBeacon('/analytics/events', blob);
+                    return;
+                }
+
+                try {
+                    await fetch('/analytics/events', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json'
+                        },
+                        body: JSON.stringify(payload),
+                        credentials: 'include'
+                    });
+                } catch (e) {
+                    console.warn('Analytics send failed', e);
+                }
+            }
+
+            window.TweakiAnalytics = {
+                sendEvent,
+                getAnonId
+            };
+        })();
+    </script>
+
+
+</head>
+
+<body class="preload-wrapper">
+    <!-- RTL -->
+    <!-- <a href="javascript:void(0);" id="toggle-rtl" class="tf-btn animate-hover-btn btn-fill">RTL</a> -->
+    <!-- /RTL  -->
+    <!-- preload -->
+    <div class="preload preload-container">
+        <div class="preload-logo">
+            <div class="spinner"></div>
+        </div>
+    </div>
+    <!-- /preload -->
+    <div id="wrapper">
+        <!-- announcement-bar -->
+                <!-- /announcement-bar -->
+
+        <!-- header -->
+        <div wire:id="TmZbgwA6BlAS2sE0qQ7o" wire:initial-data="{&quot;fingerprint&quot;:{&quot;id&quot;:&quot;TmZbgwA6BlAS2sE0qQ7o&quot;,&quot;name&quot;:&quot;home.layout.header&quot;,&quot;locale&quot;:&quot;en&quot;,&quot;path&quot;:&quot;\/&quot;,&quot;method&quot;:&quot;GET&quot;,&quot;v&quot;:&quot;acj&quot;},&quot;effects&quot;:{&quot;listeners&quot;:[&quot;cartRefresh&quot;]},&quot;serverMemo&quot;:{&quot;children&quot;:[],&quot;errors&quot;:[],&quot;htmlHash&quot;:&quot;f0abcc58&quot;,&quot;data&quot;:{&quot;search&quot;:null,&quot;name&quot;:null,&quot;email&quot;:null,&quot;phone&quot;:null,&quot;message&quot;:null},&quot;dataMeta&quot;:[],&quot;checksum&quot;:&quot;4a59ec18c5c384b4b79fcfd71129527c7fa801fa0aeb222102297f024491ab61&quot;}}" x-data="{ isOpen: false }">
+
+            <header id="header" class="header-default header-style-2">
+            <div class="main-header line">
+                <div class="container-full px_15 lg-px_40">
+                    <div class="row wrapper-header align-items-center">
+                        <div class="col-xl-5 tf-md-hidden">
+                            <ul class="header-list-categories">
+                                                                    <li class="categories-item active">
+                                        <a href="https://adamsstore.tweaki.store" class="text-uppercase">
+                                            Adams
+                                        </a>
+                                    </li>
+                                                                <li class="categories-item"><a href="#ask_question" data-bs-toggle="modal" class="text-uppercase">
+                                        Enquiry
+                                    </a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4 col-3 tf-lg-hidden">
+                            <a href="#mobileMenu" data-bs-toggle="offcanvas" aria-controls="offcanvasLeft">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="16" viewBox="0 0 24 16" fill="none">
+                                    <path d="M2.00056 2.28571H16.8577C17.1608 2.28571 17.4515 2.16531 17.6658 1.95098C17.8802 1.73665 18.0006 1.44596 18.0006 1.14286C18.0006 0.839753 17.8802 0.549063 17.6658 0.334735C17.4515 0.120408 17.1608 0 16.8577 0H2.00056C1.69745 0 1.40676 0.120408 1.19244 0.334735C0.978109 0.549063 0.857702 0.839753 0.857702 1.14286C0.857702 1.44596 0.978109 1.73665 1.19244 1.95098C1.40676 2.16531 1.69745 2.28571 2.00056 2.28571ZM0.857702 8C0.857702 7.6969 0.978109 7.40621 1.19244 7.19188C1.40676 6.97755 1.69745 6.85714 2.00056 6.85714H22.572C22.8751 6.85714 23.1658 6.97755 23.3801 7.19188C23.5944 7.40621 23.7148 7.6969 23.7148 8C23.7148 8.30311 23.5944 8.59379 23.3801 8.80812C23.1658 9.02245 22.8751 9.14286 22.572 9.14286H2.00056C1.69745 9.14286 1.40676 9.02245 1.19244 8.80812C0.978109 8.59379 0.857702 8.30311 0.857702 8ZM0.857702 14.8571C0.857702 14.554 0.978109 14.2633 1.19244 14.049C1.40676 13.8347 1.69745 13.7143 2.00056 13.7143H12.2863C12.5894 13.7143 12.8801 13.8347 13.0944 14.049C13.3087 14.2633 13.4291 14.554 13.4291 14.8571C13.4291 15.1602 13.3087 15.4509 13.0944 15.6653C12.8801 15.8796 12.5894 16 12.2863 16H2.00056C1.69745 16 1.40676 15.8796 1.19244 15.6653C0.978109 15.4509 0.857702 15.1602 0.857702 14.8571Z" fill="currentColor"></path>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="text-center col-xl-2 col-md-4 col-6">
+                            <a href="https://adamsstore.tweaki.store" class="logo-header">
+                                <img src="images/696896ddd6b5c.jpeg" alt="logo" class="logo">
+                            </a>
+                        </div>
+
+                        <div class="col-xl-5 col-md-4 col-3">
+                            <ul class="gap-20 nav-icon d-flex justify-content-end align-items-center">
+                                <li class="nav-search"><a href="#canvasSearch" data-bs-toggle="offcanvas" @click="isOpen = true" aria-controls="offcanvasLeft" class="nav-icon-item"><i class="icon icon-search"></i></a></li>
+                                <li class="nav-account"><a href="#login" data-bs-toggle="modal" class="nav-icon-item"><i class="icon icon-account"></i></a></li>
+                                <li class="nav-wishlist"><a href="#login" data-bs-toggle="modal" class="nav-icon-item"><i class="icon icon-heart"></i><span class="count-box">
+                                            0
+                                        </span></a></li>
+                                <li class="nav-cart"><a href="#shoppingCart" wire:click="updateCart" data-bs-toggle="modal" class="nav-icon-item"><i class="icon icon-bag"></i><span class="count-box">
+                                            0
+                                        </span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header-bottom line">
+                <div class="container-full px_15 lg-px_40">
+                    <div class="wrapper-header d-flex justify-content-center align-items-center">
+                        <nav class="text-center box-navigation">
+                            <ul class="box-nav-ul d-flex align-items-center justify-content-center gap-30">
+
+                                                                    <li class="menu-item position-relative">
+                                        <a href="https://adamsstore.tweaki.store/shop/category/mens-fashion-Jfdww" class="item-link">
+                                            Men's Fashion
+                                                                                            <i class="icon icon-arrow-down"></i>
+                                                                                    </a>
+
+                                        <div class="sub-menu submenu-default">
+                                            <ul class="menu-list">
+                                                                                                    <li><a href="https://adamsstore.tweaki.store/shop/subcategory/watches-V8EMD" class="menu-link-text link text_black-2">
+                                                            Watches
+                                                        </a></li>
+                                                                                                    <li><a href="https://adamsstore.tweaki.store/shop/subcategory/clothing-1WJ3F" class="menu-link-text link text_black-2">
+                                                            Clothing
+                                                        </a></li>
+                                                                                                    <li><a href="https://adamsstore.tweaki.store/shop/subcategory/accessories-CtoZG" class="menu-link-text link text_black-2">
+                                                            Accessories
+                                                        </a></li>
+                                                
+                                            </ul>
+                                        </div>
+                                    </li>
+                                                                    <li class="menu-item position-relative">
+                                        <a href="https://adamsstore.tweaki.store/shop/category/girlss-fashion-tOUr7" class="item-link">
+                                            Girls's Fashion
+                                                                                            <i class="icon icon-arrow-down"></i>
+                                                                                    </a>
+
+                                        <div class="sub-menu submenu-default">
+                                            <ul class="menu-list">
+                                                                                                    <li><a href="https://adamsstore.tweaki.store/shop/subcategory/wathes-hSUsZ" class="menu-link-text link text_black-2">
+                                                            Watches
+                                                        </a></li>
+                                                                                                    <li><a href="https://adamsstore.tweaki.store/shop/subcategory/clothing-ag01p" class="menu-link-text link text_black-2">
+                                                            Clothing
+                                                        </a></li>
+                                                                                                    <li><a href="https://adamsstore.tweaki.store/shop/subcategory/asseccories-Mwky7" class="menu-link-text link text_black-2">
+                                                            Asseccories
+                                                        </a></li>
+                                                
+                                            </ul>
+                                        </div>
+                                    </li>
+                                                                    <li class="menu-item position-relative">
+                                        <a href="https://adamsstore.tweaki.store/shop/category/home-kitchen-HknUJ" class="item-link">
+                                            Home &amp; Kitchen
+                                                                                            <i class="icon icon-arrow-down"></i>
+                                                                                    </a>
+
+                                        <div class="sub-menu submenu-default">
+                                            <ul class="menu-list">
+                                                                                                    <li><a href="https://adamsstore.tweaki.store/shop/subcategory/furniture-ZiCo0" class="menu-link-text link text_black-2">
+                                                            Furniture
+                                                        </a></li>
+                                                                                                    <li><a href="https://adamsstore.tweaki.store/shop/subcategory/accessories-zvl52" class="menu-link-text link text_black-2">
+                                                            Accessories
+                                                        </a></li>
+                                                                                                    <li><a href="https://adamsstore.tweaki.store/shop/subcategory/wall-art-r5TwA" class="menu-link-text link text_black-2">
+                                                            Wall Art
+                                                        </a></li>
+                                                                                                    <li><a href="https://adamsstore.tweaki.store/shop/subcategory/light-2Cb1M" class="menu-link-text link text_black-2">
+                                                            Light
+                                                        </a></li>
+                                                
+                                            </ul>
+                                        </div>
+                                    </li>
+                                                                    <li class="menu-item position-relative">
+                                        <a href="https://adamsstore.tweaki.store/shop/category/boy-baby-yGb9S" class="item-link">
+                                            Boy Baby
+                                                                                            <i class="icon icon-arrow-down"></i>
+                                                                                    </a>
+
+                                        <div class="sub-menu submenu-default">
+                                            <ul class="menu-list">
+                                                                                                    <li><a href="https://adamsstore.tweaki.store/shop/subcategory/clothing-y7LFs" class="menu-link-text link text_black-2">
+                                                            Clothing
+                                                        </a></li>
+                                                
+                                            </ul>
+                                        </div>
+                                    </li>
+                                                                    <li class="menu-item position-relative">
+                                        <a href="https://adamsstore.tweaki.store/shop/category/girl-baby-E1SRj" class="item-link">
+                                            Girl Baby
+                                                                                            <i class="icon icon-arrow-down"></i>
+                                                                                    </a>
+
+                                        <div class="sub-menu submenu-default">
+                                            <ul class="menu-list">
+                                                                                                    <li><a href="https://adamsstore.tweaki.store/shop/subcategory/clothing-0Ag3d" class="menu-link-text link text_black-2">
+                                                            Clothing
+                                                        </a></li>
+                                                
+                                            </ul>
+                                        </div>
+                                    </li>
+                                                                    <li class="menu-item position-relative">
+                                        <a href="https://adamsstore.tweaki.store/shop/category/smart-home-Equ43" class="item-link">
+                                            Smart Home
+                                                                                            <i class="icon icon-arrow-down"></i>
+                                                                                    </a>
+
+                                        <div class="sub-menu submenu-default">
+                                            <ul class="menu-list">
+                                                                                                    <li><a href="https://adamsstore.tweaki.store/shop/subcategory/smart-switch-FYB5T" class="menu-link-text link text_black-2">
+                                                            Smart Switch 
+                                                        </a></li>
+                                                
+                                            </ul>
+                                        </div>
+                                    </li>
+                                                                    <li class="menu-item position-relative">
+                                        <a href="https://adamsstore.tweaki.store/shop/category/electronics-bCdIe" class="item-link">
+                                            Electronics
+                                                                                            <i class="icon icon-arrow-down"></i>
+                                                                                    </a>
+
+                                        <div class="sub-menu submenu-default">
+                                            <ul class="menu-list">
+                                                                                                    <li><a href="https://adamsstore.tweaki.store/shop/subcategory/accessories-NVxhQ" class="menu-link-text link text_black-2">
+                                                            Accessories
+                                                        </a></li>
+                                                                                                    <li><a href="https://adamsstore.tweaki.store/shop/subcategory/mobile-charger-gF8qN" class="menu-link-text link text_black-2">
+                                                            Mobile Charger
+                                                        </a></li>
+                                                                                                    <li><a href="https://adamsstore.tweaki.store/shop/subcategory/smart-watch-H33st" class="menu-link-text link text_black-2">
+                                                            Smart Watch
+                                                        </a></li>
+                                                                                                    <li><a href="https://adamsstore.tweaki.store/shop/subcategory/tws-earbuds-wkRBL" class="menu-link-text link text_black-2">
+                                                            TWS earbuds
+                                                        </a></li>
+                                                                                                    <li><a href="https://adamsstore.tweaki.store/shop/subcategory/wired-earphones-FGXsz" class="menu-link-text link text_black-2">
+                                                            Wired Earphones
+                                                        </a></li>
+                                                
+                                            </ul>
+                                        </div>
+                                    </li>
+                                                                <li class="menu-item"><a href="https://adamsstore.tweaki.store/shop/products" class="item-link">All</a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <ul class="header-list-categories tf-lg-hidden">
+                                                            <li class="categories-item active"><a href="https://adamsstore.tweaki.store" class="text-uppercase">
+                                        Adams
+                                    </a></li>
+                            
+                            <li class="categories-item"><a href="#ask_question" data-bs-toggle="modal" class="text-uppercase">
+                                    Enquiry
+                                </a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </header>
+
+        <!-- mobile menu -->
+        <div class="offcanvas offcanvas-start canvas-mb" id="mobileMenu">
+            <span class="icon-close icon-close-popup" data-bs-dismiss="offcanvas" aria-label="Close"></span>
+            <div class="mb-canvas-content">
+                <div class="mb-body">
+                    <ul class="nav-ul-mb" id="wrapper-menu-navigation">
+                                                    <li class="nav-mb-item">
+                                <a href="#dropdown-menu-1" class="collapsed mb-menu-link current" data-bs-toggle="collapse" aria-expanded="true" aria-controls="dropdown-menu-one">
+                                    <span>
+                                        Men's Fashion
+                                    </span>
+                                                                            <span class="btn-open-sub"></span>
+                                                                    </a>
+                                                                    <div id="dropdown-menu-1" class="collapse">
+                                        <ul class="sub-nav-menu">
+                                                                                            <li><a href="https://adamsstore.tweaki.store/shop/subcategory/watches-V8EMD" class="sub-nav-link">
+                                                        Watches
+                                                    </a></li>
+                                                                                            <li><a href="https://adamsstore.tweaki.store/shop/subcategory/clothing-1WJ3F" class="sub-nav-link">
+                                                        Clothing
+                                                    </a></li>
+                                                                                            <li><a href="https://adamsstore.tweaki.store/shop/subcategory/accessories-CtoZG" class="sub-nav-link">
+                                                        Accessories
+                                                    </a></li>
+                                                                                    </ul>
+                                    </div>
+                                
+                            </li>
+                                                    <li class="nav-mb-item">
+                                <a href="#dropdown-menu-2" class="collapsed mb-menu-link current" data-bs-toggle="collapse" aria-expanded="true" aria-controls="dropdown-menu-one">
+                                    <span>
+                                        Girls's Fashion
+                                    </span>
+                                                                            <span class="btn-open-sub"></span>
+                                                                    </a>
+                                                                    <div id="dropdown-menu-2" class="collapse">
+                                        <ul class="sub-nav-menu">
+                                                                                            <li><a href="https://adamsstore.tweaki.store/shop/subcategory/wathes-hSUsZ" class="sub-nav-link">
+                                                        Watches
+                                                    </a></li>
+                                                                                            <li><a href="https://adamsstore.tweaki.store/shop/subcategory/clothing-ag01p" class="sub-nav-link">
+                                                        Clothing
+                                                    </a></li>
+                                                                                            <li><a href="https://adamsstore.tweaki.store/shop/subcategory/asseccories-Mwky7" class="sub-nav-link">
+                                                        Asseccories
+                                                    </a></li>
+                                                                                    </ul>
+                                    </div>
+                                
+                            </li>
+                                                    <li class="nav-mb-item">
+                                <a href="#dropdown-menu-3" class="collapsed mb-menu-link current" data-bs-toggle="collapse" aria-expanded="true" aria-controls="dropdown-menu-one">
+                                    <span>
+                                        Home &amp; Kitchen
+                                    </span>
+                                                                            <span class="btn-open-sub"></span>
+                                                                    </a>
+                                                                    <div id="dropdown-menu-3" class="collapse">
+                                        <ul class="sub-nav-menu">
+                                                                                            <li><a href="https://adamsstore.tweaki.store/shop/subcategory/furniture-ZiCo0" class="sub-nav-link">
+                                                        Furniture
+                                                    </a></li>
+                                                                                            <li><a href="https://adamsstore.tweaki.store/shop/subcategory/accessories-zvl52" class="sub-nav-link">
+                                                        Accessories
+                                                    </a></li>
+                                                                                            <li><a href="https://adamsstore.tweaki.store/shop/subcategory/wall-art-r5TwA" class="sub-nav-link">
+                                                        Wall Art
+                                                    </a></li>
+                                                                                            <li><a href="https://adamsstore.tweaki.store/shop/subcategory/light-2Cb1M" class="sub-nav-link">
+                                                        Light
+                                                    </a></li>
+                                                                                    </ul>
+                                    </div>
+                                
+                            </li>
+                                                    <li class="nav-mb-item">
+                                <a href="#dropdown-menu-4" class="collapsed mb-menu-link current" data-bs-toggle="collapse" aria-expanded="true" aria-controls="dropdown-menu-one">
+                                    <span>
+                                        Boy Baby
+                                    </span>
+                                                                            <span class="btn-open-sub"></span>
+                                                                    </a>
+                                                                    <div id="dropdown-menu-4" class="collapse">
+                                        <ul class="sub-nav-menu">
+                                                                                            <li><a href="https://adamsstore.tweaki.store/shop/subcategory/clothing-y7LFs" class="sub-nav-link">
+                                                        Clothing
+                                                    </a></li>
+                                                                                    </ul>
+                                    </div>
+                                
+                            </li>
+                                                    <li class="nav-mb-item">
+                                <a href="#dropdown-menu-5" class="collapsed mb-menu-link current" data-bs-toggle="collapse" aria-expanded="true" aria-controls="dropdown-menu-one">
+                                    <span>
+                                        Girl Baby
+                                    </span>
+                                                                            <span class="btn-open-sub"></span>
+                                                                    </a>
+                                                                    <div id="dropdown-menu-5" class="collapse">
+                                        <ul class="sub-nav-menu">
+                                                                                            <li><a href="https://adamsstore.tweaki.store/shop/subcategory/clothing-0Ag3d" class="sub-nav-link">
+                                                        Clothing
+                                                    </a></li>
+                                                                                    </ul>
+                                    </div>
+                                
+                            </li>
+                                                    <li class="nav-mb-item">
+                                <a href="#dropdown-menu-6" class="collapsed mb-menu-link current" data-bs-toggle="collapse" aria-expanded="true" aria-controls="dropdown-menu-one">
+                                    <span>
+                                        Smart Home
+                                    </span>
+                                                                            <span class="btn-open-sub"></span>
+                                                                    </a>
+                                                                    <div id="dropdown-menu-6" class="collapse">
+                                        <ul class="sub-nav-menu">
+                                                                                            <li><a href="https://adamsstore.tweaki.store/shop/subcategory/smart-switch-FYB5T" class="sub-nav-link">
+                                                        Smart Switch 
+                                                    </a></li>
+                                                                                    </ul>
+                                    </div>
+                                
+                            </li>
+                                                    <li class="nav-mb-item">
+                                <a href="#dropdown-menu-7" class="collapsed mb-menu-link current" data-bs-toggle="collapse" aria-expanded="true" aria-controls="dropdown-menu-one">
+                                    <span>
+                                        Electronics
+                                    </span>
+                                                                            <span class="btn-open-sub"></span>
+                                                                    </a>
+                                                                    <div id="dropdown-menu-7" class="collapse">
+                                        <ul class="sub-nav-menu">
+                                                                                            <li><a href="https://adamsstore.tweaki.store/shop/subcategory/accessories-NVxhQ" class="sub-nav-link">
+                                                        Accessories
+                                                    </a></li>
+                                                                                            <li><a href="https://adamsstore.tweaki.store/shop/subcategory/mobile-charger-gF8qN" class="sub-nav-link">
+                                                        Mobile Charger
+                                                    </a></li>
+                                                                                            <li><a href="https://adamsstore.tweaki.store/shop/subcategory/smart-watch-H33st" class="sub-nav-link">
+                                                        Smart Watch
+                                                    </a></li>
+                                                                                            <li><a href="https://adamsstore.tweaki.store/shop/subcategory/tws-earbuds-wkRBL" class="sub-nav-link">
+                                                        TWS earbuds
+                                                    </a></li>
+                                                                                            <li><a href="https://adamsstore.tweaki.store/shop/subcategory/wired-earphones-FGXsz" class="sub-nav-link">
+                                                        Wired Earphones
+                                                    </a></li>
+                                                                                    </ul>
+                                    </div>
+                                
+                            </li>
+                        
+
+                    </ul>
+                    <div class="mb-other-content">
+                        <div class="d-flex group-icon">
+                            <a href="https://adamsstore.tweaki.store/wishlist" class="site-nav-icon"><i class="icon icon-heart"></i>Wishlist</a>
+                        </div>
+                        <div class="mb-notice">
+                            <a href="https://api.whatsapp.com/send/?phone=9043313155&amp;text=Hi%2C+I+have+been+on+your+website+and+have+a+query.&amp;type=phone_number&amp;app_absent=0" class="text-need">Need help ?</a>
+                        </div>
+                        <ul class="mb-info">
+                            <li>Address: Karungal</li>
+                            <li>Email: <b><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="88fbe9e4edfbc8e9ece9e5fbeffaf8a6e1e6">[email&nbsp;protected]</a></b></li>
+                            <li>Phone: <b>9043313155</b></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="mb-bottom">
+                    <a hhref="#login" data-bs-toggle="modal" class="site-nav-icon"><i class="icon icon-account"></i>Login</a>
+                </div>
+            </div>
+        </div>
+        <!-- /mobile menu -->
+
+
+        <div class="tf-toolbar-bottom type-1150">
+            <div class="toolbar-item">
+                                    <a href="#toolbarShopmb" data-bs-toggle="offcanvas" aria-controls="offcanvasLeft">
+                        <div class="toolbar-icon">
+                            <i class="icon-shop"></i>
+                        </div>
+                        <div class="toolbar-label">Shop</div>
+                    </a>
+                
+            </div>
+
+            <div class="toolbar-item">
+                <a @click="isOpen = true" href="#canvasSearch" data-bs-toggle="offcanvas" aria-controls="offcanvasLeft">
+                    <div class="toolbar-icon">
+                        <i class="icon-search"></i>
+                    </div>
+                    <div class="toolbar-label">Search</div>
+                </a>
+            </div>
+            <div class="toolbar-item">
+                <a href="#login" data-bs-toggle="modal">
+                    <div class="toolbar-icon">
+                        <i class="icon-account"></i>
+                    </div>
+                    <div class="toolbar-label">Account</div>
+                </a>
+            </div>
+            <div class="toolbar-item">
+                <a href="#login" data-bs-toggle="modal">
+                    <div class="toolbar-icon">
+                        <i class="icon icon-list"></i>
+                        <div class="toolbar-count">
+                            0
+                        </div>
+                    </div>
+                    <div class="toolbar-label">Orders</div>
+                </a>
+            </div>
+            <div class="toolbar-item">
+                <a href="#shoppingCart" data-bs-toggle="modal">
+                    <div class="toolbar-icon">
+                        <i class="icon-bag"></i>
+                        <div class="toolbar-count">
+                            0
+                        </div>
+                    </div>
+                    <div class="toolbar-label">Cart</div>
+                </a>
+            </div>
+        </div>
+
+    
+
+    <div class="offcanvas offcanvas-end canvas-search" id="canvasSearch" wire:ignore.self="" data-bs-backdrop="false">
+     <div class="canvas-wrapper">
+
+         <header class="tf-search-head">
+             <div class="title fw-5">
+                 Search our site
+                 <div class="close">
+                     <span @click="isOpen = false" id="closeCanvasSearch" class="icon-close icon-close-popup" data-bs-dismiss="offcanvas" aria-label="Close"></span>
+                 </div>
+             </div>
+             <div class="tf-search-sticky">
+                 <form class="tf-mini-search-frm">
+                     <fieldset class="text">
+                         <input wire:model.debounce.500ms="search" id="searchByName" type="text" placeholder="Search" class="" name="searchByName" tabindex="0" value="" aria-required="true" required="">
+                     </fieldset>
+                     <button class="" type="submit"><i class="icon-search"></i></button>
+                 </form>
+             </div>
+         </header>
+         <div class="canvas-body p-0">
+             <div class="tf-search-content">
+                 <div class="tf-cart-hide-has-results">
+
+                     <div class="tf-col-content">
+                         <div class="tf-search-content-title fw-5">Need some inspiration?</div>
+                         <div class="tf-search-hidden-inner">
+                                                              <div class="tf-loop-item">
+                                     <div class="image">
+                                         <a href="https://adamsstore.tweaki.store/shop/product/sathara-navana-parashhaca-sharatasa-nZCk3">
+                                             <img src="images/696b31fd2d006.jpg" alt="Pretty Latest Men Shirts">
+                                         </a>
+                                     </div>
+                                     <div class="content">
+                                         <a href="https://adamsstore.tweaki.store/shop/product/sathara-navana-parashhaca-sharatasa-nZCk3">
+                                             Pretty Latest Men Shirts
+                                         </a>
+                                         <div class="tf-product-info-price">
+                                                                                              <div class="compare-at-price">
+                                                     ₹ 340
+                                                 </div>
+                                                 <div class="price-on-sale fw-6"> ₹ 272
+                                                 </div>
+                                                                                      </div>
+                                     </div>
+                                 </div>
+                                                              <div class="tf-loop-item">
+                                     <div class="image">
+                                         <a href="https://adamsstore.tweaki.store/shop/product/cksons-fab-mens-new-fancy-popcorn-checked-full-sleeve-shirt-Bnt9t">
+                                             <img src="images/6968989c947a0.jpg" alt="CKsons Fab Men's New Fancy Popcorn Checked Full Sleeve Shirt">
+                                         </a>
+                                     </div>
+                                     <div class="content">
+                                         <a href="https://adamsstore.tweaki.store/shop/product/cksons-fab-mens-new-fancy-popcorn-checked-full-sleeve-shirt-Bnt9t">
+                                             CKsons Fab Men's New Fancy Popcorn Checked Full Sl...
+                                         </a>
+                                         <div class="tf-product-info-price">
+                                                                                              <div class="compare-at-price">
+                                                     ₹ 571
+                                                 </div>
+                                                 <div class="price-on-sale fw-6"> ₹ 456.8
+                                                 </div>
+                                                                                      </div>
+                                     </div>
+                                 </div>
+                                                              <div class="tf-loop-item">
+                                     <div class="image">
+                                         <a href="https://adamsstore.tweaki.store/shop/product/macsam-premium-stylish-shirts-for-men-wine-SAM9i">
+                                             <img src="images/696898c31f619.jpg" alt="MACSAM Premium Stylish Shirts For Men - WINE">
+                                         </a>
+                                     </div>
+                                     <div class="content">
+                                         <a href="https://adamsstore.tweaki.store/shop/product/macsam-premium-stylish-shirts-for-men-wine-SAM9i">
+                                             MACSAM Premium Stylish Shirts For Men - WINE
+                                         </a>
+                                         <div class="tf-product-info-price">
+                                                                                              <div class="compare-at-price">
+                                                     ₹ 442
+                                                 </div>
+                                                 <div class="price-on-sale fw-6"> ₹ 353.6
+                                                 </div>
+                                                                                      </div>
+                                     </div>
+                                 </div>
+                                                              <div class="tf-loop-item">
+                                     <div class="image">
+                                         <a href="https://adamsstore.tweaki.store/shop/product/flower-print-long-anarkali-kurti-with-dupatta-no-bottomwear-dress-for-womens-and-girls-pack-of-1-MwAbx">
+                                             <img src="images/696898fad2504.jpg" alt="Flower Print Long Anarkali Kurti With Dupatta (No Bottomwear) Dress For Women's And Girl's (Pack Of 1)">
+                                         </a>
+                                     </div>
+                                     <div class="content">
+                                         <a href="https://adamsstore.tweaki.store/shop/product/flower-print-long-anarkali-kurti-with-dupatta-no-bottomwear-dress-for-womens-and-girls-pack-of-1-MwAbx">
+                                             Flower Print Long Anarkali Kurti With Dupatta (No...
+                                         </a>
+                                         <div class="tf-product-info-price">
+                                                                                              <div class="compare-at-price">
+                                                     ₹ 1180
+                                                 </div>
+                                                 <div class="price-on-sale fw-6"> ₹ 944
+                                                 </div>
+                                                                                      </div>
+                                     </div>
+                                 </div>
+                                                              <div class="tf-loop-item">
+                                     <div class="image">
+                                         <a href="https://adamsstore.tweaki.store/shop/product/amayra-fashion-girls-fancy-printed-soft-warm-comfy-hood-neck-sweatshirts-vfRHS">
+                                             <img src="images/6968991bb187d.jpg" alt="Amayra Fashion Girl's Fancy Printed Soft| Warm| Comfy Hood Neck Sweatshirts.">
+                                         </a>
+                                     </div>
+                                     <div class="content">
+                                         <a href="https://adamsstore.tweaki.store/shop/product/amayra-fashion-girls-fancy-printed-soft-warm-comfy-hood-neck-sweatshirts-vfRHS">
+                                             Amayra Fashion Girl's Fancy Printed Soft| Warm| Co...
+                                         </a>
+                                         <div class="tf-product-info-price">
+                                                                                              <div class="compare-at-price">
+                                                     ₹ 589
+                                                 </div>
+                                                 <div class="price-on-sale fw-6"> ₹ 471.2
+                                                 </div>
+                                                                                      </div>
+                                     </div>
+                                 </div>
+                                                              <div class="tf-loop-item">
+                                     <div class="image">
+                                         <a href="https://adamsstore.tweaki.store/shop/product/imitation-jewellery-ivkFL">
+                                             <img src="images/69689931a85f8.jpg" alt="Imitation Jewellery">
+                                         </a>
+                                     </div>
+                                     <div class="content">
+                                         <a href="https://adamsstore.tweaki.store/shop/product/imitation-jewellery-ivkFL">
+                                             Imitation Jewellery
+                                         </a>
+                                         <div class="tf-product-info-price">
+                                                                                              <div class="compare-at-price">
+                                                     ₹ 444
+                                                 </div>
+                                                 <div class="price-on-sale fw-6"> ₹ 355.2
+                                                 </div>
+                                                                                      </div>
+                                     </div>
+                                 </div>
+                                                              <div class="tf-loop-item">
+                                     <div class="image">
+                                         <a href="https://adamsstore.tweaki.store/shop/product/bangles-set-YXVlW">
+                                             <img src="images/6968995dc2fed.jpg" alt="Bangles set ">
+                                         </a>
+                                     </div>
+                                     <div class="content">
+                                         <a href="https://adamsstore.tweaki.store/shop/product/bangles-set-YXVlW">
+                                             Bangles set 
+                                         </a>
+                                         <div class="tf-product-info-price">
+                                                                                              <div class="compare-at-price">
+                                                     ₹ 376
+                                                 </div>
+                                                 <div class="price-on-sale fw-6"> ₹ 300.8
+                                                 </div>
+                                                                                      </div>
+                                     </div>
+                                 </div>
+                                                              <div class="tf-loop-item">
+                                     <div class="image">
+                                         <a href="https://adamsstore.tweaki.store/shop/product/new-kids-saree-W21UK">
+                                             <img src="images/6968998325e60.jpg" alt="new kids saree">
+                                         </a>
+                                     </div>
+                                     <div class="content">
+                                         <a href="https://adamsstore.tweaki.store/shop/product/new-kids-saree-W21UK">
+                                             new kids saree
+                                         </a>
+                                         <div class="tf-product-info-price">
+                                                                                              <div class="compare-at-price">
+                                                     ₹ 519
+                                                 </div>
+                                                 <div class="price-on-sale fw-6"> ₹ 415.2
+                                                 </div>
+                                                                                      </div>
+                                     </div>
+                                 </div>
+                                                              <div class="tf-loop-item">
+                                     <div class="image">
+                                         <a href="https://adamsstore.tweaki.store/shop/product/elegant-blush-pink-floral-anarkali-gown-festive-party-wear-ethnic-outfit-lightweight-long-dress-with-dupatta-OKIGh">
+                                             <img src="images/696899a136880.jpg" alt="Elegant Blush Pink Floral Anarkali Gown | Festive &amp; Party Wear Ethnic Outfit | Lightweight Long Dress with Dupatta">
+                                         </a>
+                                     </div>
+                                     <div class="content">
+                                         <a href="https://adamsstore.tweaki.store/shop/product/elegant-blush-pink-floral-anarkali-gown-festive-party-wear-ethnic-outfit-lightweight-long-dress-with-dupatta-OKIGh">
+                                             Elegant Blush Pink Floral Anarkali Gown | Festive...
+                                         </a>
+                                         <div class="tf-product-info-price">
+                                                                                              <div class="compare-at-price">
+                                                     ₹ 322
+                                                 </div>
+                                                 <div class="price-on-sale fw-6"> ₹ 257.6
+                                                 </div>
+                                                                                      </div>
+                                     </div>
+                                 </div>
+                                                              <div class="tf-loop-item">
+                                     <div class="image">
+                                         <a href="https://adamsstore.tweaki.store/shop/product/fashion-sling-bagwomens-sling-bagsmall-sling-bagcasual-sling-bagtrendy-sling-bagstylish-sling-bag-U99X5">
+                                             <img src="images/696899c2efa18.jpg" alt="Fashion Sling Bag,Women's Sling Bag,Small Sling Bag,Casual Sling Bag,Trendy Sling Bag,Stylish Sling Bag">
+                                         </a>
+                                     </div>
+                                     <div class="content">
+                                         <a href="https://adamsstore.tweaki.store/shop/product/fashion-sling-bagwomens-sling-bagsmall-sling-bagcasual-sling-bagtrendy-sling-bagstylish-sling-bag-U99X5">
+                                             Fashion Sling Bag,Women's Sling Bag,Small Sling Ba...
+                                         </a>
+                                         <div class="tf-product-info-price">
+                                                                                              <div class="compare-at-price">
+                                                     ₹ 571
+                                                 </div>
+                                                 <div class="price-on-sale fw-6"> ₹ 456.8
+                                                 </div>
+                                                                                      </div>
+                                     </div>
+                                 </div>
+                                                              <div class="tf-loop-item">
+                                     <div class="image">
+                                         <a href="https://adamsstore.tweaki.store/shop/product/large-35-l-casual-waterproof-laptop-bagbackpack-for-men-women-boys-girlsoffice-school-college-teens-students-ydEce">
+                                             <img src="images/696899ddb6ef2.jpg" alt="Large 35 L Casual Waterproof Laptop Bag/Backpack for Men Women Boys Girls/Office School College Teens &amp; Students">
+                                         </a>
+                                     </div>
+                                     <div class="content">
+                                         <a href="https://adamsstore.tweaki.store/shop/product/large-35-l-casual-waterproof-laptop-bagbackpack-for-men-women-boys-girlsoffice-school-college-teens-students-ydEce">
+                                             Large 35 L Casual Waterproof Laptop Bag/Backpack f...
+                                         </a>
+                                         <div class="tf-product-info-price">
+                                                                                              <div class="compare-at-price">
+                                                     ₹ 529
+                                                 </div>
+                                                 <div class="price-on-sale fw-6"> ₹ 423.2
+                                                 </div>
+                                                                                      </div>
+                                     </div>
+                                 </div>
+                                                              <div class="tf-loop-item">
+                                     <div class="image">
+                                         <a href="https://adamsstore.tweaki.store/shop/product/iishanaya-fashana-mahalo-ka-khabsarata-rayana-paratada-rauda-naka-karata-oura-sharara-nata-thapatata-sata-ka-satha-XGPCH">
+                                             <img src="images/696b31d8a66d4.jpg" alt="Eshanay Fashion Women's Beautiful Rayon Printed Round Neck Kurta And Sharara With Net Dupatta Set">
+                                         </a>
+                                     </div>
+                                     <div class="content">
+                                         <a href="https://adamsstore.tweaki.store/shop/product/iishanaya-fashana-mahalo-ka-khabsarata-rayana-paratada-rauda-naka-karata-oura-sharara-nata-thapatata-sata-ka-satha-XGPCH">
+                                             Eshanay Fashion Women's Beautiful Rayon Printed Ro...
+                                         </a>
+                                         <div class="tf-product-info-price">
+                                                                                              <div class="compare-at-price">
+                                                     ₹ 886
+                                                 </div>
+                                                 <div class="price-on-sale fw-6"> ₹ 708.8
+                                                 </div>
+                                                                                      </div>
+                                     </div>
+                                 </div>
+                                                              <div class="tf-loop-item">
+                                     <div class="image">
+                                         <a href="https://adamsstore.tweaki.store/shop/product/premium-kurti-for-women-qy2Z3">
+                                             <img src="images/69689a27ae1bc.jpg" alt="Premium Kurti For Women">
+                                         </a>
+                                     </div>
+                                     <div class="content">
+                                         <a href="https://adamsstore.tweaki.store/shop/product/premium-kurti-for-women-qy2Z3">
+                                             Premium Kurti For Women
+                                         </a>
+                                         <div class="tf-product-info-price">
+                                                                                              <div class="compare-at-price">
+                                                     ₹ 336
+                                                 </div>
+                                                 <div class="price-on-sale fw-6"> ₹ 268.8
+                                                 </div>
+                                                                                      </div>
+                                     </div>
+                                 </div>
+                                                              <div class="tf-loop-item">
+                                     <div class="image">
+                                         <a href="https://adamsstore.tweaki.store/shop/product/kurti-with-dupatta-bottomwer-0UbLE">
+                                             <img src="images/69689a5ae13a2.jpg" alt="KURTI WITH DUPATTA &amp; BOTTOMWER">
+                                         </a>
+                                     </div>
+                                     <div class="content">
+                                         <a href="https://adamsstore.tweaki.store/shop/product/kurti-with-dupatta-bottomwer-0UbLE">
+                                             KURTI WITH DUPATTA &amp; BOTTOMWER
+                                         </a>
+                                         <div class="tf-product-info-price">
+                                                                                              <div class="compare-at-price">
+                                                     ₹ 870
+                                                 </div>
+                                                 <div class="price-on-sale fw-6"> ₹ 696
+                                                 </div>
+                                                                                      </div>
+                                     </div>
+                                 </div>
+                                                              <div class="tf-loop-item">
+                                     <div class="image">
+                                         <a href="https://adamsstore.tweaki.store/shop/product/pearl-choker-necklace-in-korean-style-stylish-and-trendy-accessory-for-girls-perfect-for-ethnic-wear-special-occasions-parties-and-daily-fashion-a-stylish-addition-to-your-jewelry-collection-adding-charm-and-grace-to-any-outfit-7RNoj">
+                                             <img src="images/69689a8008bff.jpg" alt="Pearl Choker Necklace in Korean Style – stylish and Trendy Accessory for Girls, Perfect for Ethnic Wear, Special Occasions, Parties, and Daily Fashion. A Stylish Addition to Your Jewelry Collection, Adding Charm and Grace to Any Outfit.&quot;">
+                                         </a>
+                                     </div>
+                                     <div class="content">
+                                         <a href="https://adamsstore.tweaki.store/shop/product/pearl-choker-necklace-in-korean-style-stylish-and-trendy-accessory-for-girls-perfect-for-ethnic-wear-special-occasions-parties-and-daily-fashion-a-stylish-addition-to-your-jewelry-collection-adding-charm-and-grace-to-any-outfit-7RNoj">
+                                             Pearl Choker Necklace in Korean Style – stylish an...
+                                         </a>
+                                         <div class="tf-product-info-price">
+                                                                                              <div class="compare-at-price">
+                                                     ₹ 320
+                                                 </div>
+                                                 <div class="price-on-sale fw-6"> ₹ 256
+                                                 </div>
+                                                                                      </div>
+                                     </div>
+                                 </div>
+                                                              <div class="tf-loop-item">
+                                     <div class="image">
+                                         <a href="https://adamsstore.tweaki.store/shop/product/trendy-graceful-women-rayon-long-kurti-dupatta-sets-with-pants-women-pink-long-kurti-pant-sets-with-dupatta-dw1CD">
+                                             <img src="images/69689b1648434.jpg" alt="Trendy Graceful Women Rayon Long Kurti Dupatta sets with Pants | Women Pink Long Kurti Pant Sets with Dupatta">
+                                         </a>
+                                     </div>
+                                     <div class="content">
+                                         <a href="https://adamsstore.tweaki.store/shop/product/trendy-graceful-women-rayon-long-kurti-dupatta-sets-with-pants-women-pink-long-kurti-pant-sets-with-dupatta-dw1CD">
+                                             Trendy Graceful Women Rayon Long Kurti Dupatta set...
+                                         </a>
+                                         <div class="tf-product-info-price">
+                                                                                              <div class="compare-at-price">
+                                                     ₹ 915
+                                                 </div>
+                                                 <div class="price-on-sale fw-6"> ₹ 732
+                                                 </div>
+                                                                                      </div>
+                                     </div>
+                                 </div>
+                                                              <div class="tf-loop-item">
+                                     <div class="image">
+                                         <a href="https://adamsstore.tweaki.store/shop/product/cotton-shorts-men-denim-jeans-men-formal-shirts-men-formal-trousers-men-grey-blazers-leather-jackets-men-men-active-shorts-men-sweaters-men-trunks-printed-briefs-men-printed-tshirts-sleeveless-sweatshirts-men-sport-jackets-men-sport-tracksuits-men-vests-wool-jackets-men-bTsMO">
+                                             <img src="images/69689b414221f.jpg" alt="Cotton Shorts Men | Denim Jeans Men | Formal Shirts Men | Formal Trousers Men | Grey Blazers | Leather Jackets Men | Men Active Shorts | Men Sweaters | Men Trunks | Printed Briefs Men | Printed Tshirts | Sleeveless Sweatshirts Men | Sport Jackets Men | Sport Tracksuits Men | Vests | Wool Jackets Men">
+                                         </a>
+                                     </div>
+                                     <div class="content">
+                                         <a href="https://adamsstore.tweaki.store/shop/product/cotton-shorts-men-denim-jeans-men-formal-shirts-men-formal-trousers-men-grey-blazers-leather-jackets-men-men-active-shorts-men-sweaters-men-trunks-printed-briefs-men-printed-tshirts-sleeveless-sweatshirts-men-sport-jackets-men-sport-tracksuits-men-vests-wool-jackets-men-bTsMO">
+                                             Cotton Shorts Men | Denim Jeans Men | Formal Shirt...
+                                         </a>
+                                         <div class="tf-product-info-price">
+                                                                                              <div class="compare-at-price">
+                                                     ₹ 732
+                                                 </div>
+                                                 <div class="price-on-sale fw-6"> ₹ 585.6
+                                                 </div>
+                                                                                      </div>
+                                     </div>
+                                 </div>
+                                                              <div class="tf-loop-item">
+                                     <div class="image">
+                                         <a href="https://adamsstore.tweaki.store/shop/product/eva-fashion-women-green-poly-georgette-printed-kurtis-wD7gx">
+                                             <img src="images/69689b7688540.jpg" alt="EVA .FASHION Women Green Poly Georgette Printed Kurtis">
+                                         </a>
+                                     </div>
+                                     <div class="content">
+                                         <a href="https://adamsstore.tweaki.store/shop/product/eva-fashion-women-green-poly-georgette-printed-kurtis-wD7gx">
+                                             EVA .FASHION Women Green Poly Georgette Printed Ku...
+                                         </a>
+                                         <div class="tf-product-info-price">
+                                                                                              <div class="compare-at-price">
+                                                     ₹ 484
+                                                 </div>
+                                                 <div class="price-on-sale fw-6"> ₹ 387.2
+                                                 </div>
+                                                                                      </div>
+                                     </div>
+                                 </div>
+                                                              <div class="tf-loop-item">
+                                     <div class="image">
+                                         <a href="https://adamsstore.tweaki.store/shop/product/pack-of-1-warm-white-dhoom-10-m-36-led-dhoom-led-rice-light-for-decoration-string-and-series-light-for-diwali-christmas-indoor-outdoor-decoration-bedroom-wedding-birthday-party-patio-lighting-decoration-light-KVih6">
+                                             <img src="images/69689babbd73d.jpg" alt="Pack of 1 Warm White Dhoom 10 m 36 led Dhoom Led Rice Light for Decoration String and Series Light for Diwali Christmas Indoor Outdoor Decoration Bedroom Wedding, Birthday Party Patio lighting decoration light">
+                                         </a>
+                                     </div>
+                                     <div class="content">
+                                         <a href="https://adamsstore.tweaki.store/shop/product/pack-of-1-warm-white-dhoom-10-m-36-led-dhoom-led-rice-light-for-decoration-string-and-series-light-for-diwali-christmas-indoor-outdoor-decoration-bedroom-wedding-birthday-party-patio-lighting-decoration-light-KVih6">
+                                             Pack of 1 Warm White Dhoom 10 m 36 led Dhoom Led R...
+                                         </a>
+                                         <div class="tf-product-info-price">
+                                                                                              <div class="compare-at-price">
+                                                     ₹ 235
+                                                 </div>
+                                                 <div class="price-on-sale fw-6"> ₹ 188
+                                                 </div>
+                                                                                      </div>
+                                     </div>
+                                 </div>
+                                                              <div class="tf-loop-item">
+                                     <div class="image">
+                                         <a href="https://adamsstore.tweaki.store/shop/product/108-pcs-strips-medical-double-sided-tape-high-quality-free-shipping-anti-lighting-invisible-transparent-chest-sticker-self-adhesive-anti-exposure-double-sided-tape-clothes-clothing-bra-dress-inpbS">
+                                             <img src="images/696b2b956b57c.jpg" alt="  108 PCS strips Medical Double Sided Tape High Quality Free Shipping Anti-lighting Invisible Transparent Chest Sticker Self Adhesive - Anti Exposure Double Sided Tape Clothes Clothing Bra Dress">
+                                         </a>
+                                     </div>
+                                     <div class="content">
+                                         <a href="https://adamsstore.tweaki.store/shop/product/108-pcs-strips-medical-double-sided-tape-high-quality-free-shipping-anti-lighting-invisible-transparent-chest-sticker-self-adhesive-anti-exposure-double-sided-tape-clothes-clothing-bra-dress-inpbS">
+                                               108 PCS strips Medical Double Sided Tape High Qu...
+                                         </a>
+                                         <div class="tf-product-info-price">
+                                                                                              <div class="compare-at-price">
+                                                     ₹ 205
+                                                 </div>
+                                                 <div class="price-on-sale fw-6"> ₹ 164
+                                                 </div>
+                                                                                      </div>
+                                     </div>
+                                 </div>
+                                                              <div class="tf-loop-item">
+                                     <div class="image">
+                                         <a href="https://adamsstore.tweaki.store/shop/product/cute-hair-rubber-band-beads-clutcher-brown-multicolor-color-abs-plastic-juttu-clipu-jada-clipujuttu-kliplu-jada-klipujuttu-pinu-jada-pinujada-billamuti-kilippukal-muti-pinkalmudi-clippukalum-mudi-pinnukalumhair-klipgalu-mattu-hair-pingaluhair-klipgalu-mattu-hair-pingalu-Phr07">
+                                             <img src="images/696b2bba664ff.jpg" alt="Cute Hair Rubber Band &amp; Beads Clutcher - Brown Multicolor color Abs Plastic Juttu clipu / Jada Clipu/Juttu Kliplu / Jada Klipu/Juttu pinu / Jada Pinu/Jada Billa/Muti kilippukal&amp; Muti pinkal//mudi clippukalum mudi pinnukalum/Hair klip‌galu mattu Hair pin‌galu/Hair klip‌galu mattu Hair pin‌galu">
+                                         </a>
+                                     </div>
+                                     <div class="content">
+                                         <a href="https://adamsstore.tweaki.store/shop/product/cute-hair-rubber-band-beads-clutcher-brown-multicolor-color-abs-plastic-juttu-clipu-jada-clipujuttu-kliplu-jada-klipujuttu-pinu-jada-pinujada-billamuti-kilippukal-muti-pinkalmudi-clippukalum-mudi-pinnukalumhair-klipgalu-mattu-hair-pingaluhair-klipgalu-mattu-hair-pingalu-Phr07">
+                                             Cute Hair Rubber Band &amp; Beads Clutcher - Brown Mul...
+                                         </a>
+                                         <div class="tf-product-info-price">
+                                                                                              <div class="compare-at-price">
+                                                     ₹ 259
+                                                 </div>
+                                                 <div class="price-on-sale fw-6"> ₹ 207.2
+                                                 </div>
+                                                                                      </div>
+                                     </div>
+                                 </div>
+                                                              <div class="tf-loop-item">
+                                     <div class="image">
+                                         <a href="https://adamsstore.tweaki.store/shop/product/hair-pin-coffee-toffee-color-set-of-14pcs-yqAob">
+                                             <img src="images/696b2be255f2b.jpg" alt="Hair Pin - Coffee Toffee Color - Set of 14pcs">
+                                         </a>
+                                     </div>
+                                     <div class="content">
+                                         <a href="https://adamsstore.tweaki.store/shop/product/hair-pin-coffee-toffee-color-set-of-14pcs-yqAob">
+                                             Hair Pin - Coffee Toffee Color - Set of 14pcs
+                                         </a>
+                                         <div class="tf-product-info-price">
+                                                                                              <div class="compare-at-price">
+                                                     ₹ 191
+                                                 </div>
+                                                 <div class="price-on-sale fw-6"> ₹ 152.8
+                                                 </div>
+                                                                                      </div>
+                                     </div>
+                                 </div>
+                                                              <div class="tf-loop-item">
+                                     <div class="image">
+                                         <a href="https://adamsstore.tweaki.store/shop/product/silk-saree-with-beautiful-design-SVVZw">
+                                             <img src="images/696b2c260f96b.jpg" alt="Silk saree with beautiful design…">
+                                         </a>
+                                     </div>
+                                     <div class="content">
+                                         <a href="https://adamsstore.tweaki.store/shop/product/silk-saree-with-beautiful-design-SVVZw">
+                                             Silk saree with beautiful design…
+                                         </a>
+                                         <div class="tf-product-info-price">
+                                                                                              <div class="compare-at-price">
+                                                     ₹ 2722
+                                                 </div>
+                                                 <div class="price-on-sale fw-6"> ₹ 2177.6
+                                                 </div>
+                                                                                      </div>
+                                     </div>
+                                 </div>
+                                                              <div class="tf-loop-item">
+                                     <div class="image">
+                                         <a href="https://adamsstore.tweaki.store/shop/product/faux-georgette-lace-border-saree-KVcra">
+                                             <img src="images/696b2c5eca6ad.jpg" alt="faux georgette Lace Border saree">
+                                         </a>
+                                     </div>
+                                     <div class="content">
+                                         <a href="https://adamsstore.tweaki.store/shop/product/faux-georgette-lace-border-saree-KVcra">
+                                             faux georgette Lace Border saree
+                                         </a>
+                                         <div class="tf-product-info-price">
+                                                                                              <div class="compare-at-price">
+                                                     ₹ 1148
+                                                 </div>
+                                                 <div class="price-on-sale fw-6"> ₹ 918.4
+                                                 </div>
+                                                                                      </div>
+                                     </div>
+                                 </div>
+                                                              <div class="tf-loop-item">
+                                     <div class="image">
+                                         <a href="https://adamsstore.tweaki.store/shop/product/deepika-26-Des81">
+                                             <img src="images/696b2c7f7c88a.jpg" alt="DEEPIKA 26">
+                                         </a>
+                                     </div>
+                                     <div class="content">
+                                         <a href="https://adamsstore.tweaki.store/shop/product/deepika-26-Des81">
+                                             DEEPIKA 26
+                                         </a>
+                                         <div class="tf-product-info-price">
+                                                                                              <div class="compare-at-price">
+                                                     ₹ 1803
+                                                 </div>
+                                                 <div class="price-on-sale fw-6"> ₹ 1442.4
+                                                 </div>
+                                                                                      </div>
+                                     </div>
+                                 </div>
+                                                              <div class="tf-loop-item">
+                                     <div class="image">
+                                         <a href="https://adamsstore.tweaki.store/shop/product/yashika-elegant-banarasi-silk-fabric-saree-featuring-intricate-brocade-work-and-rich-handcrafted-traditional-patterns-wLumy">
+                                             <img src="images/696b2ca823ec4.jpg" alt="Yashika Elegant Banarasi Silk Fabric Saree Featuring Intricate Brocade Work and Rich Handcrafted Traditional Patterns">
+                                         </a>
+                                     </div>
+                                     <div class="content">
+                                         <a href="https://adamsstore.tweaki.store/shop/product/yashika-elegant-banarasi-silk-fabric-saree-featuring-intricate-brocade-work-and-rich-handcrafted-traditional-patterns-wLumy">
+                                             Yashika Elegant Banarasi Silk Fabric Saree Featuri...
+                                         </a>
+                                         <div class="tf-product-info-price">
+                                                                                              <div class="compare-at-price">
+                                                     ₹ 2627
+                                                 </div>
+                                                 <div class="price-on-sale fw-6"> ₹ 2101.6
+                                                 </div>
+                                                                                      </div>
+                                     </div>
+                                 </div>
+                                                              <div class="tf-loop-item">
+                                     <div class="image">
+                                         <a href="https://adamsstore.tweaki.store/shop/product/woven-banarasi-art-silk-saree-pink-Vv6nW">
+                                             <img src="images/696b2ccd2dbad.jpg" alt="Woven Banarasi Art Silk Saree (Pink)">
+                                         </a>
+                                     </div>
+                                     <div class="content">
+                                         <a href="https://adamsstore.tweaki.store/shop/product/woven-banarasi-art-silk-saree-pink-Vv6nW">
+                                             Woven Banarasi Art Silk Saree (Pink)
+                                         </a>
+                                         <div class="tf-product-info-price">
+                                                                                              <div class="compare-at-price">
+                                                     ₹ 1684
+                                                 </div>
+                                                 <div class="price-on-sale fw-6"> ₹ 1347.2
+                                                 </div>
+                                                                                      </div>
+                                     </div>
+                                 </div>
+                                                              <div class="tf-loop-item">
+                                     <div class="image">
+                                         <a href="https://adamsstore.tweaki.store/shop/product/jaipuri-trending-new-kanjivaram-3d-plain-saree-TvVx3">
+                                             <img src="images/696b2cf3a478d.jpg" alt="JAIPURI TRENDING NEW KANJIVARAM 3D PLAIN SAREE">
+                                         </a>
+                                     </div>
+                                     <div class="content">
+                                         <a href="https://adamsstore.tweaki.store/shop/product/jaipuri-trending-new-kanjivaram-3d-plain-saree-TvVx3">
+                                             JAIPURI TRENDING NEW KANJIVARAM 3D PLAIN SAREE
+                                         </a>
+                                         <div class="tf-product-info-price">
+                                                                                              <div class="compare-at-price">
+                                                     ₹ 2191
+                                                 </div>
+                                                 <div class="price-on-sale fw-6"> ₹ 1752.8
+                                                 </div>
+                                                                                      </div>
+                                     </div>
+                                 </div>
+                                                              <div class="tf-loop-item">
+                                     <div class="image">
+                                         <a href="https://adamsstore.tweaki.store/shop/product/marsh-yellow-rangkat-design-tl9Ny">
+                                             <img src="images/696b2d1deba52.jpg" alt="Marsh Yellow Rangkat Design">
+                                         </a>
+                                     </div>
+                                     <div class="content">
+                                         <a href="https://adamsstore.tweaki.store/shop/product/marsh-yellow-rangkat-design-tl9Ny">
+                                             Marsh Yellow Rangkat Design
+                                         </a>
+                                         <div class="tf-product-info-price">
+                                                                                              <div class="compare-at-price">
+                                                     ₹ 1212
+                                                 </div>
+                                                 <div class="price-on-sale fw-6"> ₹ 969.6
+                                                 </div>
+                                                                                      </div>
+                                     </div>
+                                 </div>
+                                                              <div class="tf-loop-item">
+                                     <div class="image">
+                                         <a href="https://adamsstore.tweaki.store/shop/product/rich-look-banarasi-silk-saree-heavy-golden-zari-weaving-on-pallu-traditional-wedding-collection-gIZfE">
+                                             <img src="images/696b2d488ac31.jpg" alt="&quot;Rich Look Banarasi Silk Saree | Heavy Golden Zari Weaving on Pallu | Traditional Wedding Collection&quot;">
+                                         </a>
+                                     </div>
+                                     <div class="content">
+                                         <a href="https://adamsstore.tweaki.store/shop/product/rich-look-banarasi-silk-saree-heavy-golden-zari-weaving-on-pallu-traditional-wedding-collection-gIZfE">
+                                             "Rich Look Banarasi Silk Saree | Heavy Golden Zari...
+                                         </a>
+                                         <div class="tf-product-info-price">
+                                                                                              <div class="compare-at-price">
+                                                     ₹ 786
+                                                 </div>
+                                                 <div class="price-on-sale fw-6"> ₹ 628.8
+                                                 </div>
+                                                                                      </div>
+                                     </div>
+                                 </div>
+                                                              <div class="tf-loop-item">
+                                     <div class="image">
+                                         <a href="https://adamsstore.tweaki.store/shop/product/surya-upasna-pink-saree-LaJqJ">
+                                             <img src="images/696b2d71e9b39.jpg" alt="Surya upasna pink saree">
+                                         </a>
+                                     </div>
+                                     <div class="content">
+                                         <a href="https://adamsstore.tweaki.store/shop/product/surya-upasna-pink-saree-LaJqJ">
+                                             Surya upasna pink saree
+                                         </a>
+                                         <div class="tf-product-info-price">
+                                                                                              <div class="compare-at-price">
+                                                     ₹ 2022
+                                                 </div>
+                                                 <div class="price-on-sale fw-6"> ₹ 1617.6
+                                                 </div>
+                                                                                      </div>
+                                     </div>
+                                 </div>
+                                                              <div class="tf-loop-item">
+                                     <div class="image">
+                                         <a href="https://adamsstore.tweaki.store/shop/product/kanjeevaram-silk-bangalori-silk-tribal-print-with-running-blouse-ZnNek">
+                                             <img src="images/696b2d9b0eb33.jpg" alt="Kanjeevaram Silk bangalori silk Tribal print with Running Blouse">
+                                         </a>
+                                     </div>
+                                     <div class="content">
+                                         <a href="https://adamsstore.tweaki.store/shop/product/kanjeevaram-silk-bangalori-silk-tribal-print-with-running-blouse-ZnNek">
+                                             Kanjeevaram Silk bangalori silk Tribal print with...
+                                         </a>
+                                         <div class="tf-product-info-price">
+                                                                                              <div class="compare-at-price">
+                                                     ₹ 2330
+                                                 </div>
+                                                 <div class="price-on-sale fw-6"> ₹ 1864
+                                                 </div>
+                                                                                      </div>
+                                     </div>
+                                 </div>
+                                                              <div class="tf-loop-item">
+                                     <div class="image">
+                                         <a href="https://adamsstore.tweaki.store/shop/product/chirag-textiles-mens-checked-multicolor-shirts-7wftt">
+                                             <img src="images/696b2dc7e50e1.jpg" alt="CHIRAG TEXTILES Men's Checked Multicolor Shirts">
+                                         </a>
+                                     </div>
+                                     <div class="content">
+                                         <a href="https://adamsstore.tweaki.store/shop/product/chirag-textiles-mens-checked-multicolor-shirts-7wftt">
+                                             CHIRAG TEXTILES Men's Checked Multicolor Shirts
+                                         </a>
+                                         <div class="tf-product-info-price">
+                                                                                              <div class="compare-at-price">
+                                                     ₹ 251
+                                                 </div>
+                                                 <div class="price-on-sale fw-6"> ₹ 200.8
+                                                 </div>
+                                                                                      </div>
+                                     </div>
+                                 </div>
+                                                              <div class="tf-loop-item">
+                                     <div class="image">
+                                         <a href="https://adamsstore.tweaki.store/shop/product/mens-shirt-HFQ5m">
+                                             <img src="images/696b2df766d8c.jpg" alt="men's shirt">
+                                         </a>
+                                     </div>
+                                     <div class="content">
+                                         <a href="https://adamsstore.tweaki.store/shop/product/mens-shirt-HFQ5m">
+                                             men's shirt
+                                         </a>
+                                         <div class="tf-product-info-price">
+                                                                                              <div class="compare-at-price">
+                                                     ₹ 444
+                                                 </div>
+                                                 <div class="price-on-sale fw-6"> ₹ 355.2
+                                                 </div>
+                                                                                      </div>
+                                     </div>
+                                 </div>
+                                                              <div class="tf-loop-item">
+                                     <div class="image">
+                                         <a href="https://adamsstore.tweaki.store/shop/product/electric-wall-socket-repair-kit-for-86-type-wall-socket-with-10pcs-abs-insulation-58EeL">
+                                             <img src="images/696b2e672c381.jpg" alt="Electric Wall Socket Repair Kit for 86 Type Wall Socket with 10Pcs ABS Insulation">
+                                         </a>
+                                     </div>
+                                     <div class="content">
+                                         <a href="https://adamsstore.tweaki.store/shop/product/electric-wall-socket-repair-kit-for-86-type-wall-socket-with-10pcs-abs-insulation-58EeL">
+                                             Electric Wall Socket Repair Kit for 86 Type Wall S...
+                                         </a>
+                                         <div class="tf-product-info-price">
+                                                                                              <div class="compare-at-price">
+                                                     ₹ 683
+                                                 </div>
+                                                 <div class="price-on-sale fw-6"> ₹ 546.4
+                                                 </div>
+                                                                                      </div>
+                                     </div>
+                                 </div>
+                                                              <div class="tf-loop-item">
+                                     <div class="image">
+                                         <a href="https://adamsstore.tweaki.store/shop/product/4-socket-3-switch-multi-plug-6a-traveller-multi-plug-PdU2y">
+                                             <img src="images/696b2ea7e6f60.jpg" alt="4 Socket 3 Switch Multi Plug 6A (Traveller Multi Plug)">
+                                         </a>
+                                     </div>
+                                     <div class="content">
+                                         <a href="https://adamsstore.tweaki.store/shop/product/4-socket-3-switch-multi-plug-6a-traveller-multi-plug-PdU2y">
+                                             4 Socket 3 Switch Multi Plug 6A (Traveller Multi P...
+                                         </a>
+                                         <div class="tf-product-info-price">
+                                                                                              <div class="compare-at-price">
+                                                     ₹ 261
+                                                 </div>
+                                                 <div class="price-on-sale fw-6"> ₹ 208.8
+                                                 </div>
+                                                                                      </div>
+                                     </div>
+                                 </div>
+                                                              <div class="tf-loop-item">
+                                     <div class="image">
+                                         <a href="https://adamsstore.tweaki.store/shop/product/chinaar-pack-of-1-cTfdA">
+                                             <img src="images/696b2ecb99ebb.jpg" alt="CHINAAR PACK OF 1">
+                                         </a>
+                                     </div>
+                                     <div class="content">
+                                         <a href="https://adamsstore.tweaki.store/shop/product/chinaar-pack-of-1-cTfdA">
+                                             CHINAAR PACK OF 1
+                                         </a>
+                                         <div class="tf-product-info-price">
+                                                                                              <div class="compare-at-price">
+                                                     ₹ 308
+                                                 </div>
+                                                 <div class="price-on-sale fw-6"> ₹ 246.4
+                                                 </div>
+                                                                                      </div>
+                                     </div>
+                                 </div>
+                                                              <div class="tf-loop-item">
+                                     <div class="image">
+                                         <a href="https://adamsstore.tweaki.store/shop/product/shivmaan-art-golden-and-wooden-leaves-frame-wall-art-home-decorwall-decorliving-room-K7wu7">
+                                             <img src="images/696b2ef76e655.jpg" alt="Shivmaan Art GOLDEN AND WOODEN LEAVES FRAME WALL ART /HOME DECOR/WALL DECOR/LIVING ROOM">
+                                         </a>
+                                     </div>
+                                     <div class="content">
+                                         <a href="https://adamsstore.tweaki.store/shop/product/shivmaan-art-golden-and-wooden-leaves-frame-wall-art-home-decorwall-decorliving-room-K7wu7">
+                                             Shivmaan Art GOLDEN AND WOODEN LEAVES FRAME WALL A...
+                                         </a>
+                                         <div class="tf-product-info-price">
+                                                                                              <div class="compare-at-price">
+                                                     ₹ 253
+                                                 </div>
+                                                 <div class="price-on-sale fw-6"> ₹ 202.4
+                                                 </div>
+                                                                                      </div>
+                                     </div>
+                                 </div>
+                                                              <div class="tf-loop-item">
+                                     <div class="image">
+                                         <a href="https://adamsstore.tweaki.store/shop/product/music-wall-art-painting-modern-wall-frames-for-home-decor-office-living-room-poster-with-frame-wall-decoration-painting-premium-art-framed-wall-painting-with-frames-for-home-decor-set-of-2-8x8-inch-framed-vrFqa">
+                                             <img src="images/696b2f1ff3be6.jpg" alt="Music Wall Art Painting | Modern Wall Frames For Home Décor Office Living Room |Poster With Frame Wall Decoration Painting | Premium Art Framed Wall Painting With Frames For Home Décor | Set of 2  ( 8X8 inch ), Framed)">
+                                         </a>
+                                     </div>
+                                     <div class="content">
+                                         <a href="https://adamsstore.tweaki.store/shop/product/music-wall-art-painting-modern-wall-frames-for-home-decor-office-living-room-poster-with-frame-wall-decoration-painting-premium-art-framed-wall-painting-with-frames-for-home-decor-set-of-2-8x8-inch-framed-vrFqa">
+                                             Music Wall Art Painting | Modern Wall Frames For H...
+                                         </a>
+                                         <div class="tf-product-info-price">
+                                                                                              <div class="compare-at-price">
+                                                     ₹ 430
+                                                 </div>
+                                                 <div class="price-on-sale fw-6"> ₹ 344
+                                                 </div>
+                                                                                      </div>
+                                     </div>
+                                 </div>
+                                                              <div class="tf-loop-item">
+                                     <div class="image">
+                                         <a href="https://adamsstore.tweaki.store/shop/product/ie-universal-car-mount-mobile-holder-stand-strong-suction-cup-double-shift-locking-for-dashboard-windshield-quick-touch-release-long-telescopic-arm-360-rotatable-head-for-all-mobile-phones-ZuqHf">
+                                             <img src="images/696b308b056ea.jpg" alt="IE Universal Car Mount Mobile Holder Stand| Strong Suction Cup, Double Shift Locking for Dashboard Windshield| Quick Touch Release, Long Telescopic Arm, 360° Rotatable Head| for All Mobile Phones">
+                                         </a>
+                                     </div>
+                                     <div class="content">
+                                         <a href="https://adamsstore.tweaki.store/shop/product/ie-universal-car-mount-mobile-holder-stand-strong-suction-cup-double-shift-locking-for-dashboard-windshield-quick-touch-release-long-telescopic-arm-360-rotatable-head-for-all-mobile-phones-ZuqHf">
+                                             IE Universal Car Mount Mobile Holder Stand| Strong...
+                                         </a>
+                                         <div class="tf-product-info-price">
+                                                                                              <div class="compare-at-price">
+                                                     ₹ 414
+                                                 </div>
+                                                 <div class="price-on-sale fw-6"> ₹ 331.2
+                                                 </div>
+                                                                                      </div>
+                                     </div>
+                                 </div>
+                             
+                         </div>
+                     </div>
+                 </div>
+             </div>
+         </div>
+     </div>
+ </div>
+
+
+ <div class="offcanvas-backdrop fade show" x-show="isOpen" @click="()=> { isOpen = false,  document.getElementById('closeCanvasSearch').click() }"></div>
+    <!-- modal ask_question -->
+<div class="modal modalCentered fade modalDemo tf-product-modal modal-part-content" id="ask_question" wire:ignore.self="">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="header">
+                <div class="demo-title">Ask a question</div>
+                <span class="icon-close icon-close-popup" data-bs-dismiss="modal"></span>
+            </div>
+            <div class="overflow-y-auto">
+                <form class="" wire:submit.prevent="submitEnquiry">
+                    <fieldset class="">
+                        <label for="">Name *</label>
+                        <input type="text" wire:model.defer="name" placeholder="" class="" name="text" tabindex="2" value="" aria-required="true">
+                                            </fieldset>
+                    <fieldset class="">
+                        <label for="">Email *</label>
+                        <input type="email" placeholder="" class="" name="text" tabindex="2" value="" aria-required="true" wire:model.defer="email">
+                                            </fieldset>
+                    <fieldset class="">
+                        <label for="">Phone number</label>
+                        <input type="number" placeholder="" class="" name="text" tabindex="2" value="" aria-required="true" wire:model.defer="phone">
+                                                </fieldset>
+                    <fieldset class="">
+                        <label for="">Message</label>
+                        <textarea name="message" rows="4" placeholder="" class="" tabindex="2" aria-required="true" wire:model.defer="message"></textarea>
+                                                </fieldset>
+                    <button type="submit" class="tf-btn w-100 btn-fill justify-content-center fw-6 fs-16 flex-grow-1 animate-hover-btn">
+                        <i wire:loading="" wire:target="submitEnquiry" class="fa fa-spinner fa-spin" style="font-size:20px"></i>
+                        &nbsp;
+                        <span>Send</span></button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /modal ask_question -->
+
+<!-- modal delivery_return -->
+<div class="modal modalCentered fade modalDemo tf-product-modal modal-part-content" id="delivery_return">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="header">
+                <div class="demo-title">Shipping &amp; Delivery</div>
+                <span class="icon-close icon-close-popup" data-bs-dismiss="modal"></span>
+            </div>
+            <div class="overflow-y-auto">
+                
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /modal delivery_return -->
+
+</div>
+
+<!-- Livewire Component wire-end:TmZbgwA6BlAS2sE0qQ7o -->        <!-- /header -->
+
+        <section class="flat-spacing-20">
+
+    <!-- slider -->
+    <div class="tf-slideshow slider-women slider-effect-fade position-relative pb_2">
+        <div dir="ltr" class="swiper tf-sw-slideshow" data-preview="1" data-tablet="1" data-mobile="1" data-centered="false" data-space="0" data-loop="true" data-auto-play="false" data-delay="2000" data-speed="1000">
+            <div class="swiper-wrapper">
+                                    <div class="swiper-slide" lazy="true">
+                        <div class="wrap-slider-new">
+                            <img class="lazyload" data-src="https://raw.githubusercontent.com/tweaki-india/medias/main/696896f75bf09.jpeg" src="images/696896f75bf09.jpeg" width="100%" alt="Adams">
+                            <div class="box-content">
+                                <div class="container">
+                                    <h1 class="fade-item fade-item-1">
+                                        Adams
+                                    </h1>
+                                    <p class="fade-item fade-item-2">
+                                        
+                                    </p>
+                                    <a href="" class="fade-item fade-item-3 tf-btn btn-fill animate-hover-btn btn-xl radius-60"><span>Shop
+                                            collection</span><i class="icon icon-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                            </div>
+        </div>
+        <div class="wrap-pagination">
+            <div class="container">
+                <div class="sw-dots sw-pagination-slider justify-content-center"></div>
+            </div>
+        </div>
+    </div>
+
+    <!--<div class="tf-slideshow slider-women slider-effect-fade position-relative pb_2">-->
+    <!--    <div dir="ltr" class="swiper tf-sw-slideshow" data-preview="1" data-tablet="1" data-mobile="1"-->
+    <!--        data-centered="false" data-space="0" data-loop="true" data-auto-play="false" data-delay="2000"-->
+    <!--        data-speed="1000">-->
+    <!--        <div class="swiper-wrapper">-->
+    <!--            -->
+    <!--                <div class="swiper-slide" lazy="true">-->
+    <!--                    <div class="wrap-slider">-->
+    <!--                        <img class="lazyload" data-src="https://raw.githubusercontent.com/tweaki-india/medias/main/696896f75bf09.jpeg" src="https://raw.githubusercontent.com/tweaki-india/medias/main/696896f75bf09.jpeg"-->
+    <!--                            alt="Adams">-->
+    <!--                        <div class="box-content">-->
+    <!--                            <div class="container">-->
+    <!--                                <h1 class="fade-item fade-item-1">-->
+    <!--                                    Adams-->
+    <!--                                </h1>-->
+    <!--                                <p class="fade-item fade-item-2">-->
+    <!--                                    -->
+    <!--                                </p>-->
+    <!--                                <a href=""-->
+    <!--                                    class="fade-item fade-item-3 tf-btn btn-fill animate-hover-btn btn-xl radius-60"><span>Shop-->
+    <!--                                        collection</span><i class="icon icon-arrow-right"></i></a>-->
+    <!--                            </div>-->
+    <!--                        </div>-->
+    <!--                    </div>-->
+    <!--                </div>-->
+    <!--            -->
+    <!--        </div>-->
+    <!--    </div>-->
+    <!--    <div class="wrap-pagination">-->
+    <!--        <div class="container">-->
+    <!--            <div class="sw-dots sw-pagination-slider justify-content-center"></div>-->
+    <!--        </div>-->
+    <!--    </div>-->
+    <!--</div>-->
+    <!-- /slider -->
+
+
+            <section class="flat-spacing-15 pb_2" data-product-carousel="" data-item-to-show="4" data-item-dots="false" data-item-arrows="true" data-item-dots-mb="true" data-item-arrows-mb="false">
+            <div class="container">
+
+
+                <div class="flat-title wow fadeInUp" data-wow-delay="0s">
+                    <span class="title"> Top Selling Products</span>
+                    <p class="sub-title">
+                        This week we have a special offer for you.
+                    </p>
+                </div>
+
+                <div class="product-grid">
+                                            <div class="product-card">
+                            <div wire:id="MCC6d7FPaWxE23vqxHIi" wire:initial-data="{&quot;fingerprint&quot;:{&quot;id&quot;:&quot;MCC6d7FPaWxE23vqxHIi&quot;,&quot;name&quot;:&quot;home.components.product&quot;,&quot;locale&quot;:&quot;en&quot;,&quot;path&quot;:&quot;\/&quot;,&quot;method&quot;:&quot;GET&quot;,&quot;v&quot;:&quot;acj&quot;},&quot;effects&quot;:{&quot;listeners&quot;:[]},&quot;serverMemo&quot;:{&quot;children&quot;:[],&quot;errors&quot;:[],&quot;htmlHash&quot;:&quot;dfe84fee&quot;,&quot;data&quot;:{&quot;product&quot;:[],&quot;slug&quot;:&quot;sathara-navana-parashhaca-sharatasa-nZCk3&quot;,&quot;is_wishlist_page&quot;:false},&quot;dataMeta&quot;:{&quot;models&quot;:{&quot;product&quot;:{&quot;class&quot;:&quot;App\\Models\\Product&quot;,&quot;id&quot;:1,&quot;relations&quot;:[&quot;colorsRelation&quot;],&quot;connection&quot;:&quot;sqlite&quot;,&quot;collectionClass&quot;:null}}},&quot;checksum&quot;:&quot;176575de4c116cffbdbd935f54dad19365e162c2965b9ae5dc9ec0e160a1d819&quot;}}">
+
+        <div class="card-product">
+        <div class="card-product-wrapper">
+            <a href="https://adamsstore.tweaki.store/shop/product/sathara-navana-parashhaca-sharatasa-nZCk3" class="product-img">
+                <img class="lazyload img-product" data-src="https://raw.githubusercontent.com/tweaki-io/medias/main/696b31fd2d006.jpg" src="images/696b31fd2d006.jpg" alt="image-product">
+                <img class="lazyload img-hover" data-src="https://raw.githubusercontent.com/tweaki-io/medias/main/696b31fde7b27.jpg" src="images/696b31fde7b27.jpg" alt="image-product">
+            </a>
+
+            
+            <div class="list-product-btn">
+                <a href="https://adamsstore.tweaki.store/shop/product/sathara-navana-parashhaca-sharatasa-nZCk3" class="box-icon bg_white quick-add tf-btn-loading">
+                    <span class="icon icon-bag"></span>
+                    <span class="tooltip">Quick Add</span>
+                </a>
+                <a wire:click.prevent="addToWishlist" href="javascript:void(0);" class="box-icon bg_white wishlist btn-icon-action">
+
+                                            <span class="icon icon-heart"></span>
+                                        <span class="tooltip">Add to Wishlist</span>
+                </a>
+
+            </div>
+            <div class="size-list">
+                <span>80 stocks available</span>
+            </div>
+
+                            <div class="on-sale-wrap">
+                    <div class="on-sale-item">-20%</div>
+                </div>
+            
+            
+        </div>
+        <div class="card-product-info">
+            <a href="https://adamsstore.tweaki.store/shop/product/sathara-navana-parashhaca-sharatasa-nZCk3" class="title link">
+                Pretty Latest Men Shirts
+            </a>
+            <span class="price">
+
+                                    <div class="tf-product-info-price">
+                        <div class="compare-at-price" style="font-size: 13px;">
+                            ₹ 340
+                        </div>
+                        <div class="price-on-sale" style="font-size: 15px;">
+                            ₹ 272
+                        </div>
+                    </div>
+                            </span>
+            <ul class="list-color-product" wire:ignore="">
+                            </ul>
+        </div>
+    </div>
+    
+</div>
+
+<!-- Livewire Component wire-end:MCC6d7FPaWxE23vqxHIi -->                        </div>
+                                            <div class="product-card">
+                            <div wire:id="PQ4r8OpnXo9xzzmRg98v" wire:initial-data="{&quot;fingerprint&quot;:{&quot;id&quot;:&quot;PQ4r8OpnXo9xzzmRg98v&quot;,&quot;name&quot;:&quot;home.components.product&quot;,&quot;locale&quot;:&quot;en&quot;,&quot;path&quot;:&quot;\/&quot;,&quot;method&quot;:&quot;GET&quot;,&quot;v&quot;:&quot;acj&quot;},&quot;effects&quot;:{&quot;listeners&quot;:[]},&quot;serverMemo&quot;:{&quot;children&quot;:[],&quot;errors&quot;:[],&quot;htmlHash&quot;:&quot;bfb0bd61&quot;,&quot;data&quot;:{&quot;product&quot;:[],&quot;slug&quot;:&quot;macsam-premium-stylish-shirts-for-men-wine-SAM9i&quot;,&quot;is_wishlist_page&quot;:false},&quot;dataMeta&quot;:{&quot;models&quot;:{&quot;product&quot;:{&quot;class&quot;:&quot;App\\Models\\Product&quot;,&quot;id&quot;:3,&quot;relations&quot;:[&quot;colorsRelation&quot;],&quot;connection&quot;:&quot;sqlite&quot;,&quot;collectionClass&quot;:null}}},&quot;checksum&quot;:&quot;2cfc1b891a87455a0a4c9bdafd119c2f5716d6cf1f0084f3603a7dfd416e8938&quot;}}">
+
+        <div class="card-product">
+        <div class="card-product-wrapper">
+            <a href="https://adamsstore.tweaki.store/shop/product/macsam-premium-stylish-shirts-for-men-wine-SAM9i" class="product-img">
+                <img class="lazyload img-product" data-src="https://raw.githubusercontent.com/tweaki-india/medias/main/696898c31f619.jpg" src="images/696898c31f619.jpg" alt="image-product">
+                <img class="lazyload img-hover" data-src="https://raw.githubusercontent.com/tweaki-india/medias/main/696898c45d32d.jpg" src="images/696898c45d32d.jpg" alt="image-product">
+            </a>
+
+            
+            <div class="list-product-btn">
+                <a href="https://adamsstore.tweaki.store/shop/product/macsam-premium-stylish-shirts-for-men-wine-SAM9i" class="box-icon bg_white quick-add tf-btn-loading">
+                    <span class="icon icon-bag"></span>
+                    <span class="tooltip">Quick Add</span>
+                </a>
+                <a wire:click.prevent="addToWishlist" href="javascript:void(0);" class="box-icon bg_white wishlist btn-icon-action">
+
+                                            <span class="icon icon-heart"></span>
+                                        <span class="tooltip">Add to Wishlist</span>
+                </a>
+
+            </div>
+            <div class="size-list">
+                <span>50 stocks available</span>
+            </div>
+
+                            <div class="on-sale-wrap">
+                    <div class="on-sale-item">-20%</div>
+                </div>
+            
+            
+        </div>
+        <div class="card-product-info">
+            <a href="https://adamsstore.tweaki.store/shop/product/macsam-premium-stylish-shirts-for-men-wine-SAM9i" class="title link">
+                MACSAM Premium Stylish Shirts For Men - WINE
+            </a>
+            <span class="price">
+
+                                    <div class="tf-product-info-price">
+                        <div class="compare-at-price" style="font-size: 13px;">
+                            ₹ 442
+                        </div>
+                        <div class="price-on-sale" style="font-size: 15px;">
+                            ₹ 353.6
+                        </div>
+                    </div>
+                            </span>
+            <ul class="list-color-product" wire:ignore="">
+                            </ul>
+        </div>
+    </div>
+    
+</div>
+
+<!-- Livewire Component wire-end:PQ4r8OpnXo9xzzmRg98v -->                        </div>
+                                            <div class="product-card">
+                            <div wire:id="zRRWfh3nHDwg2vBjd7dH" wire:initial-data="{&quot;fingerprint&quot;:{&quot;id&quot;:&quot;zRRWfh3nHDwg2vBjd7dH&quot;,&quot;name&quot;:&quot;home.components.product&quot;,&quot;locale&quot;:&quot;en&quot;,&quot;path&quot;:&quot;\/&quot;,&quot;method&quot;:&quot;GET&quot;,&quot;v&quot;:&quot;acj&quot;},&quot;effects&quot;:{&quot;listeners&quot;:[]},&quot;serverMemo&quot;:{&quot;children&quot;:[],&quot;errors&quot;:[],&quot;htmlHash&quot;:&quot;0e57d2cd&quot;,&quot;data&quot;:{&quot;product&quot;:[],&quot;slug&quot;:&quot;flower-print-long-anarkali-kurti-with-dupatta-no-bottomwear-dress-for-womens-and-girls-pack-of-1-MwAbx&quot;,&quot;is_wishlist_page&quot;:false},&quot;dataMeta&quot;:{&quot;models&quot;:{&quot;product&quot;:{&quot;class&quot;:&quot;App\\Models\\Product&quot;,&quot;id&quot;:4,&quot;relations&quot;:[&quot;colorsRelation&quot;],&quot;connection&quot;:&quot;sqlite&quot;,&quot;collectionClass&quot;:null}}},&quot;checksum&quot;:&quot;a6c85da34382c9299dd00794868249e5f5c31401354a72d8fcdbf5443f52c9f2&quot;}}">
+
+        <div class="card-product">
+        <div class="card-product-wrapper">
+            <a href="https://adamsstore.tweaki.store/shop/product/flower-print-long-anarkali-kurti-with-dupatta-no-bottomwear-dress-for-womens-and-girls-pack-of-1-MwAbx" class="product-img">
+                <img class="lazyload img-product" data-src="https://raw.githubusercontent.com/tweaki-india/medias/main/696898fad2504.jpg" src="images/696898fad2504.jpg" alt="image-product">
+                <img class="lazyload img-hover" data-src="https://raw.githubusercontent.com/tweaki-india/medias/main/696898fc3f008.jpg" src="images/696898fc3f008.jpg" alt="image-product">
+            </a>
+
+            
+            <div class="list-product-btn">
+                <a href="https://adamsstore.tweaki.store/shop/product/flower-print-long-anarkali-kurti-with-dupatta-no-bottomwear-dress-for-womens-and-girls-pack-of-1-MwAbx" class="box-icon bg_white quick-add tf-btn-loading">
+                    <span class="icon icon-bag"></span>
+                    <span class="tooltip">Quick Add</span>
+                </a>
+                <a wire:click.prevent="addToWishlist" href="javascript:void(0);" class="box-icon bg_white wishlist btn-icon-action">
+
+                                            <span class="icon icon-heart"></span>
+                                        <span class="tooltip">Add to Wishlist</span>
+                </a>
+
+            </div>
+            <div class="size-list">
+                <span>60 stocks available</span>
+            </div>
+
+                            <div class="on-sale-wrap">
+                    <div class="on-sale-item">-20%</div>
+                </div>
+            
+            
+        </div>
+        <div class="card-product-info">
+            <a href="https://adamsstore.tweaki.store/shop/product/flower-print-long-anarkali-kurti-with-dupatta-no-bottomwear-dress-for-womens-and-girls-pack-of-1-MwAbx" class="title link">
+                Flower Print Long Anarkali Kurti With Dupatta (No Bottomwear) Dress For Women's And Girl's (Pack Of 1)
+            </a>
+            <span class="price">
+
+                                    <div class="tf-product-info-price">
+                        <div class="compare-at-price" style="font-size: 13px;">
+                            ₹ 1180
+                        </div>
+                        <div class="price-on-sale" style="font-size: 15px;">
+                            ₹ 944
+                        </div>
+                    </div>
+                            </span>
+            <ul class="list-color-product" wire:ignore="">
+                            </ul>
+        </div>
+    </div>
+    
+</div>
+
+<!-- Livewire Component wire-end:zRRWfh3nHDwg2vBjd7dH -->                        </div>
+                                            <div class="product-card">
+                            <div wire:id="ZSeoTGdAhxPRfRXuUijp" wire:initial-data="{&quot;fingerprint&quot;:{&quot;id&quot;:&quot;ZSeoTGdAhxPRfRXuUijp&quot;,&quot;name&quot;:&quot;home.components.product&quot;,&quot;locale&quot;:&quot;en&quot;,&quot;path&quot;:&quot;\/&quot;,&quot;method&quot;:&quot;GET&quot;,&quot;v&quot;:&quot;acj&quot;},&quot;effects&quot;:{&quot;listeners&quot;:[]},&quot;serverMemo&quot;:{&quot;children&quot;:[],&quot;errors&quot;:[],&quot;htmlHash&quot;:&quot;1e4a9f69&quot;,&quot;data&quot;:{&quot;product&quot;:[],&quot;slug&quot;:&quot;elegant-blush-pink-floral-anarkali-gown-festive-party-wear-ethnic-outfit-lightweight-long-dress-with-dupatta-OKIGh&quot;,&quot;is_wishlist_page&quot;:false},&quot;dataMeta&quot;:{&quot;models&quot;:{&quot;product&quot;:{&quot;class&quot;:&quot;App\\Models\\Product&quot;,&quot;id&quot;:9,&quot;relations&quot;:[&quot;colorsRelation&quot;],&quot;connection&quot;:&quot;sqlite&quot;,&quot;collectionClass&quot;:null}}},&quot;checksum&quot;:&quot;e1fb91da8ac24fa1d2a03625a37a280732c3c9d24cd2ac5b0d635a16b31b11b2&quot;}}">
+
+        <div class="card-product">
+        <div class="card-product-wrapper">
+            <a href="https://adamsstore.tweaki.store/shop/product/elegant-blush-pink-floral-anarkali-gown-festive-party-wear-ethnic-outfit-lightweight-long-dress-with-dupatta-OKIGh" class="product-img">
+                <img class="lazyload img-product" data-src="https://raw.githubusercontent.com/tweaki-india/medias/main/696899a136880.jpg" src="images/696899a136880.jpg" alt="image-product">
+                <img class="lazyload img-hover" data-src="https://raw.githubusercontent.com/tweaki-india/medias/main/696899a271cca.jpg" src="images/696899a271cca.jpg" alt="image-product">
+            </a>
+
+            
+            <div class="list-product-btn">
+                <a href="https://adamsstore.tweaki.store/shop/product/elegant-blush-pink-floral-anarkali-gown-festive-party-wear-ethnic-outfit-lightweight-long-dress-with-dupatta-OKIGh" class="box-icon bg_white quick-add tf-btn-loading">
+                    <span class="icon icon-bag"></span>
+                    <span class="tooltip">Quick Add</span>
+                </a>
+                <a wire:click.prevent="addToWishlist" href="javascript:void(0);" class="box-icon bg_white wishlist btn-icon-action">
+
+                                            <span class="icon icon-heart"></span>
+                                        <span class="tooltip">Add to Wishlist</span>
+                </a>
+
+            </div>
+            <div class="size-list">
+                <span>60 stocks available</span>
+            </div>
+
+                            <div class="on-sale-wrap">
+                    <div class="on-sale-item">-20%</div>
+                </div>
+            
+            
+        </div>
+        <div class="card-product-info">
+            <a href="https://adamsstore.tweaki.store/shop/product/elegant-blush-pink-floral-anarkali-gown-festive-party-wear-ethnic-outfit-lightweight-long-dress-with-dupatta-OKIGh" class="title link">
+                Elegant Blush Pink Floral Anarkali Gown | Festive &amp; Party Wear Ethnic Outfit | Lightweight Long Dress with Dupatta
+            </a>
+            <span class="price">
+
+                                    <div class="tf-product-info-price">
+                        <div class="compare-at-price" style="font-size: 13px;">
+                            ₹ 322
+                        </div>
+                        <div class="price-on-sale" style="font-size: 15px;">
+                            ₹ 257.6
+                        </div>
+                    </div>
+                            </span>
+            <ul class="list-color-product" wire:ignore="">
+                            </ul>
+        </div>
+    </div>
+    
+</div>
+
+<!-- Livewire Component wire-end:ZSeoTGdAhxPRfRXuUijp -->                        </div>
+                                            <div class="product-card">
+                            <div wire:id="qOCZuSqaFqOgVJnHDdMr" wire:initial-data="{&quot;fingerprint&quot;:{&quot;id&quot;:&quot;qOCZuSqaFqOgVJnHDdMr&quot;,&quot;name&quot;:&quot;home.components.product&quot;,&quot;locale&quot;:&quot;en&quot;,&quot;path&quot;:&quot;\/&quot;,&quot;method&quot;:&quot;GET&quot;,&quot;v&quot;:&quot;acj&quot;},&quot;effects&quot;:{&quot;listeners&quot;:[]},&quot;serverMemo&quot;:{&quot;children&quot;:[],&quot;errors&quot;:[],&quot;htmlHash&quot;:&quot;b4a44f3e&quot;,&quot;data&quot;:{&quot;product&quot;:[],&quot;slug&quot;:&quot;fashion-sling-bagwomens-sling-bagsmall-sling-bagcasual-sling-bagtrendy-sling-bagstylish-sling-bag-U99X5&quot;,&quot;is_wishlist_page&quot;:false},&quot;dataMeta&quot;:{&quot;models&quot;:{&quot;product&quot;:{&quot;class&quot;:&quot;App\\Models\\Product&quot;,&quot;id&quot;:10,&quot;relations&quot;:[&quot;colorsRelation&quot;],&quot;connection&quot;:&quot;sqlite&quot;,&quot;collectionClass&quot;:null}}},&quot;checksum&quot;:&quot;a943e5fa1444c6724226bb8be4cc63a8ba4b5fd47dc0791ea5adbd906783a247&quot;}}">
+
+        <div class="card-product">
+        <div class="card-product-wrapper">
+            <a href="https://adamsstore.tweaki.store/shop/product/fashion-sling-bagwomens-sling-bagsmall-sling-bagcasual-sling-bagtrendy-sling-bagstylish-sling-bag-U99X5" class="product-img">
+                <img class="lazyload img-product" data-src="https://raw.githubusercontent.com/tweaki-india/medias/main/696899c2efa18.jpg" src="images/696899c2efa18.jpg" alt="image-product">
+                <img class="lazyload img-hover" data-src="https://raw.githubusercontent.com/tweaki-india/medias/main/696899c42d17f.jpg" src="images/696899c42d17f.jpg" alt="image-product">
+            </a>
+
+            
+            <div class="list-product-btn">
+                <a href="https://adamsstore.tweaki.store/shop/product/fashion-sling-bagwomens-sling-bagsmall-sling-bagcasual-sling-bagtrendy-sling-bagstylish-sling-bag-U99X5" class="box-icon bg_white quick-add tf-btn-loading">
+                    <span class="icon icon-bag"></span>
+                    <span class="tooltip">Quick Add</span>
+                </a>
+                <a wire:click.prevent="addToWishlist" href="javascript:void(0);" class="box-icon bg_white wishlist btn-icon-action">
+
+                                            <span class="icon icon-heart"></span>
+                                        <span class="tooltip">Add to Wishlist</span>
+                </a>
+
+            </div>
+            <div class="size-list">
+                <span>10 stocks available</span>
+            </div>
+
+                            <div class="on-sale-wrap">
+                    <div class="on-sale-item">-20%</div>
+                </div>
+            
+            
+        </div>
+        <div class="card-product-info">
+            <a href="https://adamsstore.tweaki.store/shop/product/fashion-sling-bagwomens-sling-bagsmall-sling-bagcasual-sling-bagtrendy-sling-bagstylish-sling-bag-U99X5" class="title link">
+                Fashion Sling Bag,Women's Sling Bag,Small Sling Bag,Casual Sling Bag,Trendy Sling Bag,Stylish Sling Bag
+            </a>
+            <span class="price">
+
+                                    <div class="tf-product-info-price">
+                        <div class="compare-at-price" style="font-size: 13px;">
+                            ₹ 571
+                        </div>
+                        <div class="price-on-sale" style="font-size: 15px;">
+                            ₹ 456.8
+                        </div>
+                    </div>
+                            </span>
+            <ul class="list-color-product" wire:ignore="">
+                            </ul>
+        </div>
+    </div>
+    
+</div>
+
+<!-- Livewire Component wire-end:qOCZuSqaFqOgVJnHDdMr -->                        </div>
+                                            <div class="product-card">
+                            <div wire:id="EupzpFWyY4ZhCUQKGfCe" wire:initial-data="{&quot;fingerprint&quot;:{&quot;id&quot;:&quot;EupzpFWyY4ZhCUQKGfCe&quot;,&quot;name&quot;:&quot;home.components.product&quot;,&quot;locale&quot;:&quot;en&quot;,&quot;path&quot;:&quot;\/&quot;,&quot;method&quot;:&quot;GET&quot;,&quot;v&quot;:&quot;acj&quot;},&quot;effects&quot;:{&quot;listeners&quot;:[]},&quot;serverMemo&quot;:{&quot;children&quot;:[],&quot;errors&quot;:[],&quot;htmlHash&quot;:&quot;c3115db6&quot;,&quot;data&quot;:{&quot;product&quot;:[],&quot;slug&quot;:&quot;iishanaya-fashana-mahalo-ka-khabsarata-rayana-paratada-rauda-naka-karata-oura-sharara-nata-thapatata-sata-ka-satha-XGPCH&quot;,&quot;is_wishlist_page&quot;:false},&quot;dataMeta&quot;:{&quot;models&quot;:{&quot;product&quot;:{&quot;class&quot;:&quot;App\\Models\\Product&quot;,&quot;id&quot;:12,&quot;relations&quot;:[&quot;colorsRelation&quot;],&quot;connection&quot;:&quot;sqlite&quot;,&quot;collectionClass&quot;:null}}},&quot;checksum&quot;:&quot;d862e2bdc90bdf378d4976110199d4a831e4c9935906751f3e549b38d76747a4&quot;}}">
+
+        <div class="card-product">
+        <div class="card-product-wrapper">
+            <a href="https://adamsstore.tweaki.store/shop/product/iishanaya-fashana-mahalo-ka-khabsarata-rayana-paratada-rauda-naka-karata-oura-sharara-nata-thapatata-sata-ka-satha-XGPCH" class="product-img">
+                <img class="lazyload img-product" data-src="https://raw.githubusercontent.com/tweaki-io/medias/main/696b31d8a66d4.jpg" src="images/696b31d8a66d4.jpg" alt="image-product">
+                <img class="lazyload img-hover" data-src="https://raw.githubusercontent.com/tweaki-io/medias/main/696b31d96a9a8.jpg" src="images/696b31d96a9a8.jpg" alt="image-product">
+            </a>
+
+            
+            <div class="list-product-btn">
+                <a href="https://adamsstore.tweaki.store/shop/product/iishanaya-fashana-mahalo-ka-khabsarata-rayana-paratada-rauda-naka-karata-oura-sharara-nata-thapatata-sata-ka-satha-XGPCH" class="box-icon bg_white quick-add tf-btn-loading">
+                    <span class="icon icon-bag"></span>
+                    <span class="tooltip">Quick Add</span>
+                </a>
+                <a wire:click.prevent="addToWishlist" href="javascript:void(0);" class="box-icon bg_white wishlist btn-icon-action">
+
+                                            <span class="icon icon-heart"></span>
+                                        <span class="tooltip">Add to Wishlist</span>
+                </a>
+
+            </div>
+            <div class="size-list">
+                <span>50 stocks available</span>
+            </div>
+
+                            <div class="on-sale-wrap">
+                    <div class="on-sale-item">-20%</div>
+                </div>
+            
+            
+        </div>
+        <div class="card-product-info">
+            <a href="https://adamsstore.tweaki.store/shop/product/iishanaya-fashana-mahalo-ka-khabsarata-rayana-paratada-rauda-naka-karata-oura-sharara-nata-thapatata-sata-ka-satha-XGPCH" class="title link">
+                Eshanay Fashion Women's Beautiful Rayon Printed Round Neck Kurta And Sharara With Net Dupatta Set
+            </a>
+            <span class="price">
+
+                                    <div class="tf-product-info-price">
+                        <div class="compare-at-price" style="font-size: 13px;">
+                            ₹ 886
+                        </div>
+                        <div class="price-on-sale" style="font-size: 15px;">
+                            ₹ 708.8
+                        </div>
+                    </div>
+                            </span>
+            <ul class="list-color-product" wire:ignore="">
+                            </ul>
+        </div>
+    </div>
+    
+</div>
+
+<!-- Livewire Component wire-end:EupzpFWyY4ZhCUQKGfCe -->                        </div>
+                                            <div class="product-card">
+                            <div wire:id="pApLFgo2CzqYRYSuRmIw" wire:initial-data="{&quot;fingerprint&quot;:{&quot;id&quot;:&quot;pApLFgo2CzqYRYSuRmIw&quot;,&quot;name&quot;:&quot;home.components.product&quot;,&quot;locale&quot;:&quot;en&quot;,&quot;path&quot;:&quot;\/&quot;,&quot;method&quot;:&quot;GET&quot;,&quot;v&quot;:&quot;acj&quot;},&quot;effects&quot;:{&quot;listeners&quot;:[]},&quot;serverMemo&quot;:{&quot;children&quot;:[],&quot;errors&quot;:[],&quot;htmlHash&quot;:&quot;6ae4653e&quot;,&quot;data&quot;:{&quot;product&quot;:[],&quot;slug&quot;:&quot;woven-banarasi-art-silk-saree-pink-Vv6nW&quot;,&quot;is_wishlist_page&quot;:false},&quot;dataMeta&quot;:{&quot;models&quot;:{&quot;product&quot;:{&quot;class&quot;:&quot;App\\Models\\Product&quot;,&quot;id&quot;:27,&quot;relations&quot;:[&quot;colorsRelation&quot;],&quot;connection&quot;:&quot;sqlite&quot;,&quot;collectionClass&quot;:null}}},&quot;checksum&quot;:&quot;7d7bd81e7432b99446cda21c2d90dfda1c2f7c2d7d27418169e4046e1a240d23&quot;}}">
+
+        <div class="card-product">
+        <div class="card-product-wrapper">
+            <a href="https://adamsstore.tweaki.store/shop/product/woven-banarasi-art-silk-saree-pink-Vv6nW" class="product-img">
+                <img class="lazyload img-product" data-src="https://raw.githubusercontent.com/tweaki-io/medias/main/696b2ccd2dbad.jpg" src="images/696b2ccd2dbad.jpg" alt="image-product">
+                <img class="lazyload img-hover" data-src="https://raw.githubusercontent.com/tweaki-io/medias/main/696b2ccf010e4.jpg" src="images/696b2ccf010e4.jpg" alt="image-product">
+            </a>
+
+            
+            <div class="list-product-btn">
+                <a href="https://adamsstore.tweaki.store/shop/product/woven-banarasi-art-silk-saree-pink-Vv6nW" class="box-icon bg_white quick-add tf-btn-loading">
+                    <span class="icon icon-bag"></span>
+                    <span class="tooltip">Quick Add</span>
+                </a>
+                <a wire:click.prevent="addToWishlist" href="javascript:void(0);" class="box-icon bg_white wishlist btn-icon-action">
+
+                                            <span class="icon icon-heart"></span>
+                                        <span class="tooltip">Add to Wishlist</span>
+                </a>
+
+            </div>
+            <div class="size-list">
+                <span>10 stocks available</span>
+            </div>
+
+                            <div class="on-sale-wrap">
+                    <div class="on-sale-item">-20%</div>
+                </div>
+            
+            
+        </div>
+        <div class="card-product-info">
+            <a href="https://adamsstore.tweaki.store/shop/product/woven-banarasi-art-silk-saree-pink-Vv6nW" class="title link">
+                Woven Banarasi Art Silk Saree (Pink)
+            </a>
+            <span class="price">
+
+                                    <div class="tf-product-info-price">
+                        <div class="compare-at-price" style="font-size: 13px;">
+                            ₹ 1684
+                        </div>
+                        <div class="price-on-sale" style="font-size: 15px;">
+                            ₹ 1347.2
+                        </div>
+                    </div>
+                            </span>
+            <ul class="list-color-product" wire:ignore="">
+                            </ul>
+        </div>
+    </div>
+    
+</div>
+
+<!-- Livewire Component wire-end:pApLFgo2CzqYRYSuRmIw -->                        </div>
+                                            <div class="product-card">
+                            <div wire:id="g7vu8U076hlUgKO5wbGw" wire:initial-data="{&quot;fingerprint&quot;:{&quot;id&quot;:&quot;g7vu8U076hlUgKO5wbGw&quot;,&quot;name&quot;:&quot;home.components.product&quot;,&quot;locale&quot;:&quot;en&quot;,&quot;path&quot;:&quot;\/&quot;,&quot;method&quot;:&quot;GET&quot;,&quot;v&quot;:&quot;acj&quot;},&quot;effects&quot;:{&quot;listeners&quot;:[]},&quot;serverMemo&quot;:{&quot;children&quot;:[],&quot;errors&quot;:[],&quot;htmlHash&quot;:&quot;2cd99dfa&quot;,&quot;data&quot;:{&quot;product&quot;:[],&quot;slug&quot;:&quot;surya-upasna-pink-saree-LaJqJ&quot;,&quot;is_wishlist_page&quot;:false},&quot;dataMeta&quot;:{&quot;models&quot;:{&quot;product&quot;:{&quot;class&quot;:&quot;App\\Models\\Product&quot;,&quot;id&quot;:31,&quot;relations&quot;:[&quot;colorsRelation&quot;],&quot;connection&quot;:&quot;sqlite&quot;,&quot;collectionClass&quot;:null}}},&quot;checksum&quot;:&quot;b3aab3738df2a1a624bc97f713a7deb0a4119081fbd0130561fd71633fff73e6&quot;}}">
+
+        <div class="card-product">
+        <div class="card-product-wrapper">
+            <a href="https://adamsstore.tweaki.store/shop/product/surya-upasna-pink-saree-LaJqJ" class="product-img">
+                <img class="lazyload img-product" data-src="https://raw.githubusercontent.com/tweaki-io/medias/main/696b2d71e9b39.jpg" src="images/696b2d71e9b39.jpg" alt="image-product">
+                <img class="lazyload img-hover" data-src="https://raw.githubusercontent.com/tweaki-io/medias/main/696b2d73958c2.jpg" src="images/696b2d73958c2.jpg" alt="image-product">
+            </a>
+
+            
+            <div class="list-product-btn">
+                <a href="https://adamsstore.tweaki.store/shop/product/surya-upasna-pink-saree-LaJqJ" class="box-icon bg_white quick-add tf-btn-loading">
+                    <span class="icon icon-bag"></span>
+                    <span class="tooltip">Quick Add</span>
+                </a>
+                <a wire:click.prevent="addToWishlist" href="javascript:void(0);" class="box-icon bg_white wishlist btn-icon-action">
+
+                                            <span class="icon icon-heart"></span>
+                                        <span class="tooltip">Add to Wishlist</span>
+                </a>
+
+            </div>
+            <div class="size-list">
+                <span>10 stocks available</span>
+            </div>
+
+                            <div class="on-sale-wrap">
+                    <div class="on-sale-item">-20%</div>
+                </div>
+            
+            
+        </div>
+        <div class="card-product-info">
+            <a href="https://adamsstore.tweaki.store/shop/product/surya-upasna-pink-saree-LaJqJ" class="title link">
+                Surya upasna pink saree
+            </a>
+            <span class="price">
+
+                                    <div class="tf-product-info-price">
+                        <div class="compare-at-price" style="font-size: 13px;">
+                            ₹ 2022
+                        </div>
+                        <div class="price-on-sale" style="font-size: 15px;">
+                            ₹ 1617.6
+                        </div>
+                    </div>
+                            </span>
+            <ul class="list-color-product" wire:ignore="">
+                            </ul>
+        </div>
+    </div>
+    
+</div>
+
+<!-- Livewire Component wire-end:g7vu8U076hlUgKO5wbGw -->                        </div>
+                                    </div>
+
+                
+            </div>
+        </section><!-- END: Block Products -->
+    
+
+        <!-- END: Block Products -->
+
+
+    
+
+    
+    
+
+
+
+
+    
+
+    <section class="flat-spacing-7 flat-iconbox wow fadeInUp" data-wow-delay="0s">
+
+    <div id="videoModal" class="video-modal" onclick="closeVideoModal()">
+        <video id="modalVideo" controls=""></video>
+    </div>
+
+
+    <script data-cfasync="false" src="js/email-decode.min.js"></script><script>
+        document.addEventListener('DOMContentLoaded', () => {
+            document.querySelectorAll('.media-video').forEach(video => {
+                video.play().catch(() => {});
+            });
+        });
+    </script>
+
+
+    <script>
+        function openVideoModal(src) {
+            const modal = document.getElementById('videoModal');
+            const video = document.getElementById('modalVideo');
+
+            video.src = src;
+            video.muted = false;
+            video.currentTime = 0;
+            video.play();
+
+            modal.style.display = 'flex';
+        }
+
+        function closeVideoModal() {
+            const modal = document.getElementById('videoModal');
+            const video = document.getElementById('modalVideo');
+
+            video.pause();
+            video.src = '';
+            modal.style.display = 'none';
+        }
+    </script>
+
+
+    <script>
+        TweakiAnalytics.sendEvent('Page Viewed', {
+            path: window.location.pathname,
+            title: document.title
+        });
+    </script>
+
+        <!-- footer -->
+        <footer id="footer" class="footer background-gray md-pb-70">
+    <div class="footer-wrap">
+        <div class="footer-body">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-3 col-md-6 col-12">
+                        <div class="footer-infor">
+                            <div class="footer-logo">
+                                <a href="https://adamsstore.tweaki.store">
+                                    <img src="images/696896ddd6b5c.jpeg" alt="">
+                                </a>
+                            </div>
+                            <ul>
+                                <li>
+                                    <p>Address: Karungal</p>
+                                </li>
+                                <li>
+                                    <p>Email: <a href="/cdn-cgi/l/email-protection#5526343930261534313438263227257b3c3b"><span class="__cf_email__" data-cfemail="cab9aba6afb98aabaeaba7b9adb8bae4a3a4">[email&nbsp;protected]</span></a>
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>Phone: <a href="https://api.whatsapp.com/send/?phone=9043313155&amp;text=Hi%2C+I+have+been+on+your+website+and+have+a+query.&amp;type=phone_number&amp;app_absent=0">9043313155</a>
+                                    </p>
+                                </li>
+                            </ul>
+                            <a href="https://api.whatsapp.com/send/?phone=9043313155&amp;text=Hi%2C+I+have+been+on+your+website+and+have+a+query.&amp;type=phone_number&amp;app_absent=0" class="tf-btn btn-line">Chat with us<i class="icon icon-arrow1-top-left"></i></a>
+                            <ul class="tf-social-icon d-flex gap-10">
+                                                                                                                                
+                                
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-6 col-12 footer-col-block">
+                        <div class="footer-heading footer-heading-desktop">
+                            <h6>Help</h6>
+                        </div>
+                        <div class="footer-heading footer-heading-moblie">
+                            <h6>Help</h6>
+                        </div>
+                        <ul class="footer-menu-list tf-collapse-content">
+                                                        <li>
+                                <a href="https://adamsstore.tweaki.store/wishlist" class="footer-menu_item wishlist-footer">My Wishlist</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-xl-3 col-md-6 col-12 footer-col-block">
+                        <div class="footer-heading footer-heading-desktop">
+                            <h6>Shop</h6>
+                        </div>
+                        <div class="footer-heading footer-heading-moblie">
+                            <h6>Shop</h6>
+                        </div>
+                        <ul class="footer-menu-list tf-collapse-content">
+                                                    </ul>
+                    </div>
+                    <div class="col-xl-3 col-md-6 col-12">
+                        <div class="footer-newsletter footer-col-block">
+                            <div class="footer-heading footer-heading-desktop">
+                                <h6>Sign Up for Email</h6>
+                            </div>
+                            <div class="footer-heading footer-heading-moblie">
+                                <h6>Sign Up for Email</h6>
+                            </div>
+                            <div class="tf-collapse-content">
+                                <div class="footer-menu_item">Sign up to get first dibs on new arrivals, sales,
+                                    exclusive content, events and more!</div>
+                                <div wire:id="fON27vT9aUtfzblAIMRy" wire:initial-data="{&quot;fingerprint&quot;:{&quot;id&quot;:&quot;fON27vT9aUtfzblAIMRy&quot;,&quot;name&quot;:&quot;home.subscribe&quot;,&quot;locale&quot;:&quot;en&quot;,&quot;path&quot;:&quot;\/&quot;,&quot;method&quot;:&quot;GET&quot;,&quot;v&quot;:&quot;acj&quot;},&quot;effects&quot;:{&quot;listeners&quot;:[]},&quot;serverMemo&quot;:{&quot;children&quot;:[],&quot;errors&quot;:[],&quot;htmlHash&quot;:&quot;e012d649&quot;,&quot;data&quot;:{&quot;email&quot;:null},&quot;dataMeta&quot;:[],&quot;checksum&quot;:&quot;48e6c5b156e92d7014a8fd262f76700a46c7ad9425be6e2425cd0af8e3485a85&quot;}}">
+    <form class="form-newsletter" wire:submit.prevent="subscribe" accept-charset="utf-8">
+        <div id="subscribe-content">
+            <fieldset class="email">
+                <input type="email" wire:model.defer="email" name="email-form" id="subscribe-email" placeholder="Enter your email...." tabindex="0" aria-required="true">
+            </fieldset>
+            <div class="button-submit">
+                <button class="tf-btn btn-sm radius-3 btn-fill btn-icon animate-hover-btn" type="submit">Subscribe<i class="icon icon-arrow1-top-left"></i></button>
+            </div>
+        </div>
+                <div id="subscribe-msg"></div>
+    </form>
+</div>
+
+<!-- Livewire Component wire-end:fON27vT9aUtfzblAIMRy -->                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="footer-bottom-wrap d-flex gap-20 flex-wrap justify-content-between align-items-center">
+                            <div class="footer-menu_item"> © 2026 Adams. All Rights
+                                Reserved.</div>
+                            <div class="tf-payment">
+                                <img src="images/visa.png" alt="">
+                                <img src="images/img-1.png" alt="">
+                                <img src="images/img-2.png" alt="">
+                                <img src="images/img-3.png" alt="">
+                                <img src="images/img-4.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+        <!-- /footer -->
+
+    </section></section></div>
+
+    <!-- gotop -->
+    <button id="goTop">
+        <span class="border-progress"></span>
+        <span class="icon icon-arrow-up"></span>
+    </button>
+    <!-- /gotop -->
+
+    <!-- canvasSearch -->
+
+    <!-- /canvasSearch -->
+
+    <!-- toolbarShopmb -->
+    <div class="offcanvas offcanvas-start canvas-mb toolbar-shop-mobile" id="toolbarShopmb">
+        <span class="icon-close icon-close-popup" data-bs-dismiss="offcanvas" aria-label="Close"></span>
+        <div class="mb-canvas-content">
+            <div class="mb-body">
+                <ul class="nav-ul-mb" id="wrapper-menu-navigation">
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       </ul>
+            </div>
+            <div class="mb-bottom">
+                <a href="https://adamsstore.tweaki.store/shop/products" class="tf-btn fw-5 btn-line">View all collection<i class="icon icon-arrow1-top-left"></i></a>
+            </div>
+        </div>
+    </div>
+    <!-- /toolbarShopmb -->
+
+    <!-- modal login -->
+
+    <div wire:id="8SNPuugu6CCgM0yRNXt1" wire:initial-data="{&quot;fingerprint&quot;:{&quot;id&quot;:&quot;8SNPuugu6CCgM0yRNXt1&quot;,&quot;name&quot;:&quot;home.auth&quot;,&quot;locale&quot;:&quot;en&quot;,&quot;path&quot;:&quot;\/&quot;,&quot;method&quot;:&quot;GET&quot;,&quot;v&quot;:&quot;acj&quot;},&quot;effects&quot;:{&quot;listeners&quot;:[]},&quot;serverMemo&quot;:{&quot;children&quot;:[],&quot;errors&quot;:[],&quot;htmlHash&quot;:&quot;c63d04dc&quot;,&quot;data&quot;:{&quot;phone&quot;:null,&quot;otp&quot;:null,&quot;name&quot;:null,&quot;email&quot;:null,&quot;password&quot;:null,&quot;show_additional_fields&quot;:false,&quot;msg_status&quot;:&quot;&quot;},&quot;dataMeta&quot;:[],&quot;checksum&quot;:&quot;54080bb5f1115689f22729abc8ed5e52a2c1729caea2c79e25b03b167d64084a&quot;}}">
+
+    <style>
+        /* Default (Desktop) – keep centered */
+        .modal.modalCentered .modal-dialog {
+            display: flex;
+            align-items: center;
+            min-height: calc(100% - 1rem);
+        }
+
+        /* Mobile only – move modal to bottom */
+        @media (max-width: 767px) {
+            .modal.modalCentered .modal-dialog {
+                align-items: flex-end !important;
+                min-height: 100%;
+                margin: 0;
+            }
+
+            .modal.modalCentered .modal-content {
+                border-radius: 16px 16px 0 0;
+                animation: slideUp 0.3s ease;
+            }
+        }
+
+        /* Smooth bottom-slide animation */
+        @keyframes slideUp {
+            from {
+                transform: translateY(100%);
+            }
+
+            to {
+                transform: translateY(0);
+            }
+        }
+
+
+        .google-login-wrapper {
+            margin-bottom: 16px;
+        }
+
+        .google-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            width: 100%;
+            padding: 12px 16px;
+            border-radius: 6px;
+            background: #ffffff;
+            border: 1px solid #ddd;
+            color: #333;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.25s ease;
+        }
+
+        .google-btn:hover {
+            background: #f8f8f8;
+            border-color: #cfcfcf;
+        }
+
+        .google-icon {
+            display: flex;
+            align-items: center;
+        }
+    </style>
+
+    <div class="modal modalCentered fade form-sign-in modal-part-content" id="login" wire:ignore.self="" x-data="{ showMode: true }">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="header">
+                    <div class="demo-title">Log in</div>
+                    <span class="icon-close icon-close-popup" data-bs-dismiss="modal"></span>
+                </div>
+                <div class="tf-login-form">
+
+                    <div class="bottom" x-show="showMode">
+
+                        <!-- GUEST -->
+                        <div class="w-100 mb-2">
+                            <a href="https://adamsstore.tweaki.store/client-guest-login" type="button" class="tf-btn btn-outline radius-3 w-100 justify-content-center">
+                                Continue as Guest
+                            </a>
+                        </div>
+
+                        <!-- LOGIN -->
+                        <div class="w-100">
+                            <button type="button" class="tf-btn btn-fill radius-3 w-100 justify-content-center" @click="showMode = false">
+                                Login / Register
+                            </button>
+                        </div>
+
+                    </div>
+
+                    
+                    <form class="" wire:submit.prevent="registerOrLogin" accept-charset="utf-8" x-show="!showMode">
+                        <div class="tf-field style-1">
+                            <input class="tf-field-input tf-input" placeholder=" " type="email" name="" wire:model.defer="email">
+                            <label class="tf-field-label" for="">Email *</label>
+                        </div>
+                        
+                        <div class="tf-field style-1">
+                            <input class="tf-field-input tf-input" placeholder=" " type="password" name="" wire:model.defer="password">
+                            <label class="tf-field-label" for="">Password *</label>
+                        </div>
+                        
+                        <div>
+                            <a href="#forgotPassword" data-bs-toggle="modal" class="btn-link link">Forgot your
+                                password?</a>
+                        </div>
+                        <div class="bottom">
+                            <div class="w-100">
+                                <button type="submit" class="tf-btn btn-fill animate-hover-btn radius-3 w-100 justify-content-center">
+                                    <i wire:loading="" wire:target="registerOrLogin" class="fa fa-spinner fa-spin" style="font-size:20px"></i> &nbsp; &nbsp; <span>Log
+                                        in</span></button>
+                            </div>
+                            <div class="w-100">
+                                <a href="#register" data-bs-toggle="modal" class="btn-link fw-6 w-100 link" wire:click="$set('show_additional_fields', true)">
+                                    New customer? Create your account
+                                    <i class="icon icon-arrow1-top-left"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal modalCentered fade form-sign-in modal-part-content" id="register" wire:ignore.self="">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="header">
+                    <div class="demo-title">Register</div>
+                    <span class="icon-close icon-close-popup" data-bs-dismiss="modal"></span>
+                </div>
+                <div class="tf-login-form">
+                                        <form class="" wire:submit.prevent="registerOrLogin" accept-charset="utf-8">
+                        <div class="tf-field style-1">
+                            <input class="tf-field-input tf-input" placeholder=" " type="text" name="" wire:model.defer="name">
+                            <label class="tf-field-label" for="">Full name</label>
+                        </div>
+                        
+
+                        <div class="tf-field style-1">
+                            <input class="tf-field-input tf-input" placeholder=" " type="number" name="" wire:model.defer="phone">
+                            <label class="tf-field-label" for="">Phone *</label>
+                        </div>
+                        
+                        <div class="tf-field style-1">
+                            <input class="tf-field-input tf-input" placeholder=" " type="email" name="" wire:model.defer="email">
+                            <label class="tf-field-label" for="">Email *</label>
+                        </div>
+                        
+                        <div class="tf-field style-1">
+                            <input class="tf-field-input tf-input" placeholder=" " type="password" name="" wire:model.defer="password">
+                            <label class="tf-field-label" for="">Password *</label>
+                        </div>
+                        
+
+                        <div class="bottom">
+                            <div class="w-100">
+                                <button type="submit" href="register.html" class="tf-btn btn-fill animate-hover-btn radius-3 w-100 justify-content-center">
+                                    <i wire:loading="" wire:target="registerOrLogin" class="fa fa-spinner fa-spin" style="font-size:20px"></i> &nbsp; &nbsp;
+                                    <span>Register</span></button>
+                            </div>
+                            <div class="w-100">
+                                <a href="#login" wire:click="$set('show_additional_fields', false)" data-bs-toggle="modal" class="btn-link fw-6 w-100 link">
+                                    Already have an account? Log in here
+                                    <i class="icon icon-arrow1-top-left"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal modalCentered fade form-sign-in modal-part-content" id="forgotPassword" wire:ignore.self="">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="header">
+                    <div class="demo-title">Reset your password</div>
+                    <span class="icon-close icon-close-popup" data-bs-dismiss="modal"></span>
+                </div>
+                <div class="tf-login-form">
+                    <form class="" wire:submit.prevent="forgotPassword" accept-charset="utf-8">
+                        <div>
+                            <p>Sign up for early Sale access plus tailored new arrivals, trends and promotions. To opt
+                                out, click unsubscribe in our emails</p>
+                        </div>
+                        <div class="tf-field style-1">
+                            <input class="tf-field-input tf-input" placeholder=" " type="email" name="" wire:model.defer="email">
+                            <label class="tf-field-label" for="">Email *</label>
+                        </div>
+                                                <div>
+                            <a href="#login" data-bs-toggle="modal" class="btn-link link">Cancel</a>
+                        </div>
+                        <div class="bottom">
+                            <div class="w-100">
+                                <button type="submit" class="tf-btn btn-fill animate-hover-btn radius-3 w-100 justify-content-center">
+
+                                    <i wire:loading="" wire:target="forgotPassword" class="fa fa-spinner fa-spin" style="font-size:20px"></i> &nbsp;
+                                    <span>Reset
+                                        password</span></button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script data-cfasync="false" src="js/email-decode.min.js"></script><script>
+        document.addEventListener('livewire:load', function() {
+            Livewire.on('close-modal', function() {
+                $('#login').modal('hide');
+                $('#register').modal('hide');
+                $('#forgotPassword').modal('hide');
+            });
+        });
+    </script>
+
+</div>
+
+<!-- Livewire Component wire-end:8SNPuugu6CCgM0yRNXt1 -->    <!-- /modal login -->
+
+    <!-- shoppingCart -->
+    <div wire:id="ALc21pMhS0q2rDC0Gxyt" wire:initial-data="{&quot;fingerprint&quot;:{&quot;id&quot;:&quot;ALc21pMhS0q2rDC0Gxyt&quot;,&quot;name&quot;:&quot;home.carts&quot;,&quot;locale&quot;:&quot;en&quot;,&quot;path&quot;:&quot;\/&quot;,&quot;method&quot;:&quot;GET&quot;,&quot;v&quot;:&quot;acj&quot;},&quot;effects&quot;:{&quot;listeners&quot;:[&quot;cartRefresh&quot;]},&quot;serverMemo&quot;:{&quot;children&quot;:[],&quot;errors&quot;:[],&quot;htmlHash&quot;:&quot;18fccd62&quot;,&quot;data&quot;:{&quot;agree_checkbox&quot;:true},&quot;dataMeta&quot;:[],&quot;checksum&quot;:&quot;9f7aab6b255fca07874aa3a8a4ae0041d500ad2bea28dc6eb2ed5a7acf461354&quot;}}">
+
+
+    <div class="modal fullRight fade modal-shopping-cart" id="shoppingCart" wire:ignore.self="">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="header">
+                    <div class="title fw-5">Shopping cart</div>
+                    <span class="icon-close icon-close-popup" data-bs-dismiss="modal"></span>
+                </div>
+                <div class="wrap">
+                                        <div class="tf-mini-cart-wrap">
+                        <div class="tf-mini-cart-main">
+                            <div class="tf-mini-cart-sroll">
+                                <div class="tf-mini-cart-items">
+                                                                    </div>
+
+                            </div>
+                        </div>
+                        <div class="tf-mini-cart-bottom">
+
+                            <div class="tf-mini-cart-bottom-wrap">
+                                <div class="tf-cart-totals-discounts">
+                                    <div class="tf-cart-total">Subtotal</div>
+                                    <div class="tf-totals-total-value fw-6">₹ 0</div>
+                                </div>
+                                <div class="tf-cart-tax">Taxes and <a href="#">shipping</a> calculated at checkout
+                                </div>
+                                <div class="tf-mini-cart-line"></div>
+                                <div class="tf-cart-checkbox">
+                                    <div class="tf-checkbox-wrapp">
+                                        <input class="" type="checkbox" id="CartDrawer-Form_agree" value="1" disabled="" wire:model.defer="agree_checkbox" name="agree_checkbox">
+                                        <div>
+                                            <i class="icon-check"></i>
+                                        </div>
+                                    </div>
+                                    <label for="CartDrawer-Form_agree">
+                                        I agree with the
+                                        <a href="" title="Terms of Service">terms and conditions</a>
+                                    </label>
+                                </div>
+                                <div class="tf-mini-cart-view-checkout">
+                                    <a href="https://adamsstore.tweaki.store/carts" class="tf-btn btn-outline radius-3 link w-100 justify-content-center">View
+                                        cart</a>
+                                    <a href="https://adamsstore.tweaki.store/checkout" class="tf-btn btn-fill animate-hover-btn radius-3 w-100 justify-content-center"><span>Check
+                                            out</span></a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+<!-- Livewire Component wire-end:ALc21pMhS0q2rDC0Gxyt -->    <!-- /shoppingCart -->
+
+    
+    <link rel="stylesheet" href="css/bootstrap-icons.css">
+<div class="toast-container"></div>
+<style>
+
+
+    @keyframes fadeSlideIn {
+  0% {
+    opacity: 0;
+    transform: translateX(calc(100% + 30px)) scale(0.95);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0%) scale(1);
+  }
+}
+
+@keyframes fadeSlideOut {
+  0% {
+    opacity: 1;
+    transform: translateX(0%) scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(calc(100% + 30px)) scale(0.95);
+  }
+}
+
+  .toast-container {
+  position: fixed;
+  top: 25px;
+  right: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 1000;
+}
+
+.toast {
+  position: relative;
+  width: 320px;
+  border-radius: 12px;
+  background: #fff;
+  padding: 13px;
+  box-shadow: 0 6px 20px -5px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e0e0e0;
+  display: flex;
+  overflow-x: hidden;
+  align-items: center;
+  transform: translateX(calc(100% + 30px));
+  transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.35);
+}
+
+.toast.active {
+  animation: fadeSlideIn 0.5s ease forwards;
+  transform: translateX(0%);
+  display: inherit;
+}
+
+.toast.removing {
+  animation: fadeSlideOut 0.4s ease forwards;
+}
+
+.toast .toast-content {
+  display: flex;
+  align-items: start;
+}
+
+.toast-content .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 35px;
+  min-width: 35px;
+  font-size: 35px;
+  color: #fff;
+}
+
+.toast-content .message {
+  display: flex;
+  flex-direction: column;
+  margin-left: 15px;
+}
+
+.message .text {
+  font-size: 13px;
+  font-weight: 400;
+  color: #666666;
+}
+
+.message .text.text-1 {
+  font-weight: 600;
+  color: #333;
+}
+
+.toast .close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  padding: 5px;
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.toast .close:hover {
+  opacity: 1;
+}
+
+.toast .progress {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 3px;
+  width: 100%;
+}
+
+.toast .progress:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #4070f4;
+}
+
+.progress.active:before {
+  animation: progress 5s linear forwards;
+}
+
+@keyframes progress {
+  100% {
+    right: 100%;
+  }
+}
+
+/* Toast Type Colors */
+.toast.success .icon { color: rgb(25 135 84); }
+.toast.error .icon { color: rgb(220 53 69); }
+.toast.warning .icon { color: rgb(255 193 7); }
+.toast.info .icon { color: rgb(13 202 240); }
+
+.toast.success .progress:before { background: rgb(25 135 84); }
+.toast.error .progress:before { background: rgb(220 53 69); }
+.toast.warning .progress:before { background: rgb(255 193 7); }
+.toast.info .progress:before { background: rgb(13 202 240); }
+
+
+</style>
+
+<script>
+
+    function showToast(message, type = "success") {
+        const toastContainer = document.querySelector(".toast-container");
+
+        const toast = document.createElement("div");
+        toast.classList.add("toast", type);
+        toast.classList.add("asset-toast")
+
+        toast.innerHTML = `
+          <div class="toast-content">
+            <i class="bi icon bi-${getIcon(type)}"></i>
+            <div class="message">
+              <span class="text text-1">${capitalize(type)}</span>
+              <span class="text text-2">${message}</span>
+            </div>
+          </div>
+          <i class="bi bi-x-lg close"></i>
+          <div class="progress active"></div>
+        `;
+
+        toastContainer.appendChild(toast);
+        let showToast = setTimeout(() => {
+          void toast.offsetHeight;
+          toast.classList.add("active");
+        }, 1);
+
+        const progress = toast.querySelector(".progress");
+        const closeIcon = toast.querySelector(".close");
+
+        // Auto-remove toast after 5s
+        const timer1 = setTimeout(() => {
+          toast.classList.remove("removing");
+          toast.classList.remove("active");
+        }, 5000);
+
+        const timer2 = setTimeout(() => {
+          toast.classList.remove("removing");
+          progress.classList.remove("active");
+          setTimeout(() => toast.remove(), 400);
+        }, 5300);
+
+        // Manual close
+        closeIcon.addEventListener("click", () => {
+          toast.classList.remove("active");
+          clearTimeout(timer1);
+          clearTimeout(timer2);
+          clearTimeout(showToast);
+          setTimeout(() => toast.remove(), 400);
+        });
+      }
+
+      function getIcon(type) {
+        switch (type) {
+          case "success": return "check-circle-fill";
+          case "error": return "x-circle-fill";
+          case "warning": return "exclamation-triangle-fill";
+          case "info": return "info-circle-fill";
+          default: return "check-circle-fill";
+        }
+      }
+
+      function capitalize(str) {
+        return str.charAt(0).toUpperCase() + str.slice(1);
+      }
+
+
+
+
+      // Example Usage:
+      
+
+</script>
+
+    <script>
+        if (!localStorage.getItem('guest_init')) {
+            fetch('/auto-guest-login', {
+                method: 'POST',
+                headers: {
+                    'X-CSRF-TOKEN': 'GtHqpRdnQGKwBIsqVMWSF6Sz6lSz98x3VwVk5fZi'
+                }
+            }).then(() => {
+                localStorage.setItem('guest_init', '1');
+            });
+        }
+    </script>
+
+    <script>
+        window.addEventListener('toast', e => {
+            showToast(e.detail.message, e.detail.type);
+        });
+
+        window.addEventListener('tweaki-events', e => {
+            var title = e.detail.title;
+            var properties = e.detail.properties;
+            TweakiAnalytics.sendEvent(title, properties);
+        });
+
+    </script>
+
+    <script>
+        document.querySelectorAll('[data-bs-bg]').forEach(function(el) {
+            const bg = el.getAttribute('data-bs-bg');
+            el.style.backgroundImage = `url('${bg}')`;
+            el.style.backgroundRepeat = 'no-repeat';
+            el.style.backgroundSize = 'cover'; // Or 'contain' based on your needs
+            el.style.backgroundPosition = 'center';
+        });
+    </script>
+
+    <!-- Javascript -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.min_1.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/carousel.js"></script>
+    <script src="js/bootstrap-select.min.js"></script>
+    <script src="js/lazysize.min.js"></script>
+    <script src="js/bootstrap-select.min.js"></script>
+    <script src="js/count-down.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/multiple-modal.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/livewire.js" data-turbo-eval="false" data-turbolinks-eval="false"></script><script data-turbo-eval="false" data-turbolinks-eval="false">window.livewire = new Livewire();window.Livewire = window.livewire;window.livewire_app_url = '';window.livewire_token = 'GtHqpRdnQGKwBIsqVMWSF6Sz6lSz98x3VwVk5fZi';window.deferLoadingAlpine = function (callback) {window.addEventListener('livewire:load', function () {callback();});};let started = false;window.addEventListener('alpine:initializing', function () {if (! started) {window.livewire.start();started = true;}});document.addEventListener("DOMContentLoaded", function () {if (! started) {window.livewire.start();started = true;}});</script>
+
+
+<script defer="" src="js/vcd15cbe7772f49c399c6a5babf22c1241717689176015.js" data-cf-beacon="{&quot;version&quot;:&quot;2024.11.0&quot;,&quot;token&quot;:&quot;8eeab27d680648b9b327ae2887f07c29&quot;,&quot;r&quot;:1,&quot;server_timing&quot;:{&quot;name&quot;:{&quot;cfCacheStatus&quot;:true,&quot;cfEdge&quot;:true,&quot;cfExtPri&quot;:true,&quot;cfL4&quot;:true,&quot;cfOrigin&quot;:true,&quot;cfSpeedBrain&quot;:true},&quot;location_startswith&quot;:null}}" crossorigin="anonymous"></script>
+
+
+
+</body></html>
